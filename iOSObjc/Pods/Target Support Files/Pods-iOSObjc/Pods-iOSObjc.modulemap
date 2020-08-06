@@ -1,0 +1,6 @@
+framework module Pods_iOSObjc {
+  umbrella header "Pods-iOSObjc-umbrella.h"
+
+  export *
+  module * { export * }
+}
