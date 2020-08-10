@@ -13,6 +13,7 @@
 		C735B39C24DB89CD00334224 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C735B39A24DB89CD00334224 /* Main.storyboard */; };
 		C735B39E24DB89CE00334224 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C735B39D24DB89CE00334224 /* Assets.xcassets */; };
 		C735B3A124DB89CE00334224 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C735B39F24DB89CE00334224 /* LaunchScreen.storyboard */; };
+		C75F056124E13D4500429F0F /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75F056024E13D4500429F0F /* Extension.swift */; };
 		F9C0BAE1420AF47AFA9B6E86 /* Pods_iOSSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D0F23B4AB5BAB399A15A24 /* Pods_iOSSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		C735B39D24DB89CE00334224 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C735B3A024DB89CE00334224 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C735B3A224DB89CE00334224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C75F056024E13D4500429F0F /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		D9D0F23B4AB5BAB399A15A24 /* Pods_iOSSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -78,6 +80,7 @@
 				C735B39D24DB89CE00334224 /* Assets.xcassets */,
 				C735B39F24DB89CE00334224 /* LaunchScreen.storyboard */,
 				C735B3A224DB89CE00334224 /* Info.plist */,
+				C75F056024E13D4500429F0F /* Extension.swift */,
 			);
 			path = iOSSwift;
 			sourceTree = "<group>";
@@ -88,7 +91,6 @@
 				784D6840F5361889BB1F8F9A /* Pods-iOSSwift.debug.xcconfig */,
 				6EAD79D9A78D8E350AF512C9 /* Pods-iOSSwift.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -192,6 +194,7 @@
 				C735B39924DB89CD00334224 /* ViewController.swift in Sources */,
 				C735B39524DB89CD00334224 /* AppDelegate.swift in Sources */,
 				C735B39724DB89CD00334224 /* SceneDelegate.swift in Sources */,
+				C75F056124E13D4500429F0F /* Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
