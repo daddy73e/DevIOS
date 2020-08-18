@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MVVMViewController" customModule="iOSSwift" customModuleProvider="target">
+            <connections>
+                <outlet property="btnMinus" destination="mV0-hV-0ER" id="K15-Id-Dmy"/>
+                <outlet property="btnPlus" destination="KeP-7E-69E" id="pS5-yz-baA"/>
+                <outlet property="label" destination="eM6-Up-U0n" id="Xgb-AO-qyv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KeP-7E-69E">
+                    <rect key="frame" x="172" y="433" width="30" height="30"/>
+                    <color key="backgroundColor" red="0.87843137250000003" green="0.50196078430000002" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="+">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eM6-Up-U0n">
+                    <rect key="frame" x="186" y="402" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mV0-hV-0ER">
+                    <rect key="frame" x="212" y="433" width="30" height="30"/>
+                    <color key="backgroundColor" red="0.87843137250000003" green="0.50196078430000002" blue="0.56078431370000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="-">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="KeP-7E-69E" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="-20" id="13i-js-fIh"/>
+                <constraint firstItem="mV0-hV-0ER" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" constant="20" id="3qD-6o-4Vi"/>
+                <constraint firstItem="eM6-Up-U0n" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="DML-18-fWh"/>
+                <constraint firstItem="KeP-7E-69E" firstAttribute="top" secondItem="eM6-Up-U0n" secondAttribute="bottom" constant="10" id="GZc-CA-JZh"/>
+                <constraint firstItem="mV0-hV-0ER" firstAttribute="top" secondItem="eM6-Up-U0n" secondAttribute="bottom" constant="10" id="WKC-TS-NOQ"/>
+                <constraint firstItem="KeP-7E-69E" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="gMX-6g-DGY"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="128" y="153"/>
+        </view>
+    </objects>
+</document>

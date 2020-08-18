@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     
     private func loadTableList() -> Array<String> {
         var array = Array<String>()
-        array.append("MVVM")
+        array.append("Rx & MVVM")
         return array
     }
 }

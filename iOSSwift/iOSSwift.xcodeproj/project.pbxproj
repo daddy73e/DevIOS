@@ -18,6 +18,8 @@
 		C75F056124E13D4500429F0F /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75F056024E13D4500429F0F /* Extension.swift */; };
 		C77F392724EB592C00E41A54 /* MVVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77F392524EB592C00E41A54 /* MVVMViewController.swift */; };
 		C77F392824EB592C00E41A54 /* MVVMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C77F392624EB592C00E41A54 /* MVVMViewController.xib */; };
+		C77F392B24EB5E4200E41A54 /* MVVMViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77F392A24EB5E4200E41A54 /* MVVMViewModel.swift */; };
+		C77F392D24EB63EE00E41A54 /* MVVMModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77F392C24EB63EE00E41A54 /* MVVMModel.swift */; };
 		F9C0BAE1420AF47AFA9B6E86 /* Pods_iOSSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D0F23B4AB5BAB399A15A24 /* Pods_iOSSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +39,8 @@
 		C75F056024E13D4500429F0F /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		C77F392524EB592C00E41A54 /* MVVMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewController.swift; sourceTree = "<group>"; };
 		C77F392624EB592C00E41A54 /* MVVMViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MVVMViewController.xib; sourceTree = "<group>"; };
+		C77F392A24EB5E4200E41A54 /* MVVMViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewModel.swift; sourceTree = "<group>"; };
+		C77F392C24EB63EE00E41A54 /* MVVMModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMModel.swift; sourceTree = "<group>"; };
 		D9D0F23B4AB5BAB399A15A24 /* Pods_iOSSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -81,6 +85,7 @@
 		C735B39324DB89CD00334224 /* iOSSwift */ = {
 			isa = PBXGroup;
 			children = (
+				C77F392924EB5DF700E41A54 /* mvvm */,
 				C735B39424DB89CD00334224 /* AppDelegate.swift */,
 				C735B39624DB89CD00334224 /* SceneDelegate.swift */,
 				C735B39824DB89CD00334224 /* ViewController.swift */,
@@ -91,10 +96,19 @@
 				C75F056024E13D4500429F0F /* Extension.swift */,
 				C70359C424EB568F006DC8DF /* MainTableViewCell.swift */,
 				C70359C524EB568F006DC8DF /* MainTableViewCell.xib */,
-				C77F392524EB592C00E41A54 /* MVVMViewController.swift */,
-				C77F392624EB592C00E41A54 /* MVVMViewController.xib */,
 			);
 			path = iOSSwift;
+			sourceTree = "<group>";
+		};
+		C77F392924EB5DF700E41A54 /* mvvm */ = {
+			isa = PBXGroup;
+			children = (
+				C77F392524EB592C00E41A54 /* MVVMViewController.swift */,
+				C77F392624EB592C00E41A54 /* MVVMViewController.xib */,
+				C77F392A24EB5E4200E41A54 /* MVVMViewModel.swift */,
+				C77F392C24EB63EE00E41A54 /* MVVMModel.swift */,
+			);
+			path = mvvm;
 			sourceTree = "<group>";
 		};
 		F6BDE3E2CD656E6255B87925 /* Pods */ = {
@@ -117,6 +131,7 @@
 				C735B38D24DB89CD00334224 /* Sources */,
 				C735B38E24DB89CD00334224 /* Frameworks */,
 				C735B38F24DB89CD00334224 /* Resources */,
+				63461B662B7DCABC9245AC09 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -176,6 +191,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		63461B662B7DCABC9245AC09 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSSwift/Pods-iOSSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSSwift/Pods-iOSSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSSwift/Pods-iOSSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A8E39D8EF9266C5EEE769BEA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -206,11 +238,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				C735B39924DB89CD00334224 /* ViewController.swift in Sources */,
+				C77F392D24EB63EE00E41A54 /* MVVMModel.swift in Sources */,
 				C735B39524DB89CD00334224 /* AppDelegate.swift in Sources */,
 				C77F392724EB592C00E41A54 /* MVVMViewController.swift in Sources */,
 				C735B39724DB89CD00334224 /* SceneDelegate.swift in Sources */,
 				C75F056124E13D4500429F0F /* Extension.swift in Sources */,
 				C70359C624EB568F006DC8DF /* MainTableViewCell.swift in Sources */,
+				C77F392B24EB5E4200E41A54 /* MVVMViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
