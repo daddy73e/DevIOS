@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C70359C624EB568F006DC8DF /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70359C424EB568F006DC8DF /* MainTableViewCell.swift */; };
+		C70359C724EB568F006DC8DF /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C70359C524EB568F006DC8DF /* MainTableViewCell.xib */; };
 		C735B39524DB89CD00334224 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735B39424DB89CD00334224 /* AppDelegate.swift */; };
 		C735B39724DB89CD00334224 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735B39624DB89CD00334224 /* SceneDelegate.swift */; };
 		C735B39924DB89CD00334224 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735B39824DB89CD00334224 /* ViewController.swift */; };
@@ -14,12 +16,16 @@
 		C735B39E24DB89CE00334224 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C735B39D24DB89CE00334224 /* Assets.xcassets */; };
 		C735B3A124DB89CE00334224 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C735B39F24DB89CE00334224 /* LaunchScreen.storyboard */; };
 		C75F056124E13D4500429F0F /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75F056024E13D4500429F0F /* Extension.swift */; };
+		C77F392724EB592C00E41A54 /* MVVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77F392524EB592C00E41A54 /* MVVMViewController.swift */; };
+		C77F392824EB592C00E41A54 /* MVVMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C77F392624EB592C00E41A54 /* MVVMViewController.xib */; };
 		F9C0BAE1420AF47AFA9B6E86 /* Pods_iOSSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D0F23B4AB5BAB399A15A24 /* Pods_iOSSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6EAD79D9A78D8E350AF512C9 /* Pods-iOSSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSSwift.release.xcconfig"; path = "Target Support Files/Pods-iOSSwift/Pods-iOSSwift.release.xcconfig"; sourceTree = "<group>"; };
 		784D6840F5361889BB1F8F9A /* Pods-iOSSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSSwift.debug.xcconfig"; path = "Target Support Files/Pods-iOSSwift/Pods-iOSSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		C70359C424EB568F006DC8DF /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		C70359C524EB568F006DC8DF /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
 		C735B39124DB89CD00334224 /* iOSSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C735B39424DB89CD00334224 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C735B39624DB89CD00334224 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -29,6 +35,8 @@
 		C735B3A024DB89CE00334224 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C735B3A224DB89CE00334224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C75F056024E13D4500429F0F /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		C77F392524EB592C00E41A54 /* MVVMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewController.swift; sourceTree = "<group>"; };
+		C77F392624EB592C00E41A54 /* MVVMViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MVVMViewController.xib; sourceTree = "<group>"; };
 		D9D0F23B4AB5BAB399A15A24 /* Pods_iOSSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -81,6 +89,10 @@
 				C735B39F24DB89CE00334224 /* LaunchScreen.storyboard */,
 				C735B3A224DB89CE00334224 /* Info.plist */,
 				C75F056024E13D4500429F0F /* Extension.swift */,
+				C70359C424EB568F006DC8DF /* MainTableViewCell.swift */,
+				C70359C524EB568F006DC8DF /* MainTableViewCell.xib */,
+				C77F392524EB592C00E41A54 /* MVVMViewController.swift */,
+				C77F392624EB592C00E41A54 /* MVVMViewController.xib */,
 			);
 			path = iOSSwift;
 			sourceTree = "<group>";
@@ -153,8 +165,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C77F392824EB592C00E41A54 /* MVVMViewController.xib in Resources */,
 				C735B3A124DB89CE00334224 /* LaunchScreen.storyboard in Resources */,
 				C735B39E24DB89CE00334224 /* Assets.xcassets in Resources */,
+				C70359C724EB568F006DC8DF /* MainTableViewCell.xib in Resources */,
 				C735B39C24DB89CD00334224 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,8 +207,10 @@
 			files = (
 				C735B39924DB89CD00334224 /* ViewController.swift in Sources */,
 				C735B39524DB89CD00334224 /* AppDelegate.swift in Sources */,
+				C77F392724EB592C00E41A54 /* MVVMViewController.swift in Sources */,
 				C735B39724DB89CD00334224 /* SceneDelegate.swift in Sources */,
 				C75F056124E13D4500429F0F /* Extension.swift in Sources */,
+				C70359C624EB568F006DC8DF /* MainTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
