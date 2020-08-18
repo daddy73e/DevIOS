@@ -7,5 +7,5 @@
 //
 
 struct MVVMModel {
-    var number: Int
+    var count: Int
 }

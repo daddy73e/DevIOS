@@ -17,21 +17,21 @@ class MVVMViewModel {
         let tapMinus: Observable<Void>
     }
     
-    private let model = BehaviorRelay<MVVMModel>(value: .init(number: 0))
+    private let model = BehaviorRelay<MVVMModel>(value: .init(count: 0))
     
     let number: Driver<String>
     let disposeBag = DisposeBag()
     
     init(_ inputs: Inputs) {
         number = model
-            .map { "\($0.number)" }
+            .map { "\($0.count)" }
             .asDriver(onErrorRecover: { _ in .empty() })
         
         inputs.tapPlus
             .withLatestFrom(model)
             .map { model -> MVVMModel in
                 var model = model
-                model.number += 1
+                model.count += 1
                 return model
             }.bind(to: model)
             .disposed(by: disposeBag)
@@ -40,7 +40,7 @@ class MVVMViewModel {
             .withLatestFrom(model)
             .map { model -> MVVMModel in
                 var model = model
-                model.number -= 1
+                model.count -= 1
                 return model
             }.bind(to: model)
             .disposed(by: disposeBag)
