@@ -14,6 +14,8 @@
 		C735B3BB24DB89E900334224 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C735B3BA24DB89E900334224 /* Assets.xcassets */; };
 		C735B3BE24DB89E900334224 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C735B3BD24DB89E900334224 /* Preview Assets.xcassets */; };
 		C735B3C124DB89E900334224 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C735B3BF24DB89E900334224 /* LaunchScreen.storyboard */; };
+		C77F392F24EB755500E41A54 /* CircleImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77F392E24EB755500E41A54 /* CircleImage.swift */; };
+		C77F393124EB770A00E41A54 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77F393024EB770A00E41A54 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		C735B3BD24DB89E900334224 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C735B3C024DB89E900334224 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C735B3C224DB89E900334224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C77F392E24EB755500E41A54 /* CircleImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImage.swift; sourceTree = "<group>"; };
+		C77F393024EB770A00E41A54 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +52,6 @@
 				26D71D547AEA7C5F7D9DA6B4 /* Pods-iOSSwiftUI.debug.xcconfig */,
 				94D32DB0465B6292315718FC /* Pods-iOSSwiftUI.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -88,6 +91,8 @@
 				C735B3BF24DB89E900334224 /* LaunchScreen.storyboard */,
 				C735B3C224DB89E900334224 /* Info.plist */,
 				C735B3BC24DB89E900334224 /* Preview Content */,
+				C77F392E24EB755500E41A54 /* CircleImage.swift */,
+				C77F393024EB770A00E41A54 /* MapView.swift */,
 			);
 			path = iOSSwiftUI;
 			sourceTree = "<group>";
@@ -198,6 +203,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C735B3B524DB89E700334224 /* AppDelegate.swift in Sources */,
+				C77F392F24EB755500E41A54 /* CircleImage.swift in Sources */,
+				C77F393124EB770A00E41A54 /* MapView.swift in Sources */,
 				C735B3B724DB89E700334224 /* SceneDelegate.swift in Sources */,
 				C735B3B924DB89E700334224 /* ContentView.swift in Sources */,
 			);

@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var tableList: UITableView!
     private var cellId = "MainTableViewCell"
     private var dataList = Array<String>()
@@ -29,6 +29,7 @@ class ViewController: UIViewController {
     private func loadTableList() -> Array<String> {
         var array = Array<String>()
         array.append("Rx & MVVM")
+        array.append("QR Code")
         return array
     }
 }
@@ -58,9 +59,16 @@ extension ViewController:UITableViewDataSource {
 
 extension ViewController:UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if(indexPath.row == 0) {
+        
+        switch indexPath.row {
+        case 0:
             let vc = MVVMViewController()
             self.navigationController?.pushViewController(vc, animated: true)
+        case 1:
+            let vc = QRScanViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        default:
+            return
         }
     }
 }

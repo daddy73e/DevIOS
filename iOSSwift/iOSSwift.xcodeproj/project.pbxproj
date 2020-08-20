@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,9 @@
 		C77F392824EB592C00E41A54 /* MVVMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C77F392624EB592C00E41A54 /* MVVMViewController.xib */; };
 		C77F392B24EB5E4200E41A54 /* MVVMViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77F392A24EB5E4200E41A54 /* MVVMViewModel.swift */; };
 		C77F392D24EB63EE00E41A54 /* MVVMModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77F392C24EB63EE00E41A54 /* MVVMModel.swift */; };
+		C77F393524EBCAFF00E41A54 /* QRScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77F393324EBCAFF00E41A54 /* QRScanViewController.swift */; };
+		C77F393624EBCAFF00E41A54 /* QRScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C77F393424EBCAFF00E41A54 /* QRScanViewController.xib */; };
+		C77F393C24EBCCB700E41A54 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C77F393B24EBCCB700E41A54 /* AVFoundation.framework */; };
 		F9C0BAE1420AF47AFA9B6E86 /* Pods_iOSSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D0F23B4AB5BAB399A15A24 /* Pods_iOSSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +44,9 @@
 		C77F392624EB592C00E41A54 /* MVVMViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MVVMViewController.xib; sourceTree = "<group>"; };
 		C77F392A24EB5E4200E41A54 /* MVVMViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewModel.swift; sourceTree = "<group>"; };
 		C77F392C24EB63EE00E41A54 /* MVVMModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMModel.swift; sourceTree = "<group>"; };
+		C77F393324EBCAFF00E41A54 /* QRScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScanViewController.swift; sourceTree = "<group>"; };
+		C77F393424EBCAFF00E41A54 /* QRScanViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QRScanViewController.xib; sourceTree = "<group>"; };
+		C77F393B24EBCCB700E41A54 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D9D0F23B4AB5BAB399A15A24 /* Pods_iOSSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -49,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C77F393C24EBCCB700E41A54 /* AVFoundation.framework in Frameworks */,
 				F9C0BAE1420AF47AFA9B6E86 /* Pods_iOSSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,6 +66,7 @@
 		B61FB3B0B568C05544F28326 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C77F393B24EBCCB700E41A54 /* AVFoundation.framework */,
 				D9D0F23B4AB5BAB399A15A24 /* Pods_iOSSwift.framework */,
 			);
 			name = Frameworks;
@@ -85,6 +93,7 @@
 		C735B39324DB89CD00334224 /* iOSSwift */ = {
 			isa = PBXGroup;
 			children = (
+				C77F393224EBCAD600E41A54 /* viewController */,
 				C77F392924EB5DF700E41A54 /* mvvm */,
 				C735B39424DB89CD00334224 /* AppDelegate.swift */,
 				C735B39624DB89CD00334224 /* SceneDelegate.swift */,
@@ -109,6 +118,15 @@
 				C77F392C24EB63EE00E41A54 /* MVVMModel.swift */,
 			);
 			path = mvvm;
+			sourceTree = "<group>";
+		};
+		C77F393224EBCAD600E41A54 /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				C77F393324EBCAFF00E41A54 /* QRScanViewController.swift */,
+				C77F393424EBCAFF00E41A54 /* QRScanViewController.xib */,
+			);
+			path = viewController;
 			sourceTree = "<group>";
 		};
 		F6BDE3E2CD656E6255B87925 /* Pods */ = {
@@ -180,6 +198,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C77F393624EBCAFF00E41A54 /* QRScanViewController.xib in Resources */,
 				C77F392824EB592C00E41A54 /* MVVMViewController.xib in Resources */,
 				C735B3A124DB89CE00334224 /* LaunchScreen.storyboard in Resources */,
 				C735B39E24DB89CE00334224 /* Assets.xcassets in Resources */,
@@ -237,6 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C77F393524EBCAFF00E41A54 /* QRScanViewController.swift in Sources */,
 				C735B39924DB89CD00334224 /* ViewController.swift in Sources */,
 				C77F392D24EB63EE00E41A54 /* MVVMModel.swift in Sources */,
 				C735B39524DB89CD00334224 /* AppDelegate.swift in Sources */,
@@ -392,6 +412,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C2DUQ25QQQ;
 				INFOPLIST_FILE = iOSSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -411,6 +432,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C2DUQ25QQQ;
 				INFOPLIST_FILE = iOSSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
