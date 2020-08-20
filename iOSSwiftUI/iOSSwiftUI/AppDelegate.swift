@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  iOSSwiftUI
 //
-//  Created by Yeongeun Song on 2020/08/06.
+//  Created by Yeongeun Song on 2020/08/20.
 //  Copyright © 2020 daddy73. All rights reserved.
 //
 
