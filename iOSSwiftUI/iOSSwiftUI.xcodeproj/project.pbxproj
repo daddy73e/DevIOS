@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2AF416C9E2D29EC3E648A673 /* Pods_iOSSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71745FF731620BE97D1DDCCA /* Pods_iOSSwiftUI.framework */; };
 		C742757E24EE65BE007BE7F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C742757D24EE65BE007BE7F5 /* AppDelegate.swift */; };
 		C742758024EE65BE007BE7F5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C742757F24EE65BE007BE7F5 /* SceneDelegate.swift */; };
 		C742758224EE65BE007BE7F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C742758124EE65BE007BE7F5 /* ContentView.swift */; };
@@ -16,11 +17,19 @@
 		C742759324EE663F007BE7F5 /* TestItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C742759224EE663F007BE7F5 /* TestItem.swift */; };
 		C742759824EE66B4007BE7F5 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C742759724EE66B4007BE7F5 /* DataManager.swift */; };
 		C742759A24EE699E007BE7F5 /* ContentItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C742759924EE699E007BE7F5 /* ContentItemView.swift */; };
-		C742759E24EE6D18007BE7F5 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C742759D24EE6D18007BE7F5 /* TestView.swift */; };
+		C742759E24EE6D18007BE7F5 /* ContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C742759D24EE6D18007BE7F5 /* ContentDetailView.swift */; };
 		C74275A224EE6F63007BE7F5 /* ImageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74275A124EE6F63007BE7F5 /* ImageItem.swift */; };
+		C74275A524EF4974007BE7F5 /* ImageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74275A424EF4974007BE7F5 /* ImageListView.swift */; };
+		C74275A724EF4BF1007BE7F5 /* ImageItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74275A624EF4BF1007BE7F5 /* ImageItemView.swift */; };
+		C74275AA24EF54D1007BE7F5 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C74275A924EF54D1007BE7F5 /* Kingfisher */; };
+		C74275AC24EF54D1007BE7F5 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = C74275AB24EF54D1007BE7F5 /* KingfisherSwiftUI */; };
+		C74275AE24EF56F3007BE7F5 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C74275AD24EF56F3007BE7F5 /* TestView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		36410488507248BA37F45486 /* Pods-iOSSwiftUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSSwiftUI.debug.xcconfig"; path = "Target Support Files/Pods-iOSSwiftUI/Pods-iOSSwiftUI.debug.xcconfig"; sourceTree = "<group>"; };
+		71745FF731620BE97D1DDCCA /* Pods_iOSSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91F3C341964FC733E37C872C /* Pods-iOSSwiftUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSSwiftUI.release.xcconfig"; path = "Target Support Files/Pods-iOSSwiftUI/Pods-iOSSwiftUI.release.xcconfig"; sourceTree = "<group>"; };
 		C742757A24EE65BE007BE7F5 /* iOSSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C742757D24EE65BE007BE7F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C742757F24EE65BE007BE7F5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,8 +41,11 @@
 		C742759224EE663F007BE7F5 /* TestItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestItem.swift; sourceTree = "<group>"; };
 		C742759724EE66B4007BE7F5 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		C742759924EE699E007BE7F5 /* ContentItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentItemView.swift; sourceTree = "<group>"; };
-		C742759D24EE6D18007BE7F5 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		C742759D24EE6D18007BE7F5 /* ContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailView.swift; sourceTree = "<group>"; };
 		C74275A124EE6F63007BE7F5 /* ImageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageItem.swift; sourceTree = "<group>"; };
+		C74275A424EF4974007BE7F5 /* ImageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageListView.swift; sourceTree = "<group>"; };
+		C74275A624EF4BF1007BE7F5 /* ImageItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageItemView.swift; sourceTree = "<group>"; };
+		C74275AD24EF56F3007BE7F5 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,17 +53,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C74275AC24EF54D1007BE7F5 /* KingfisherSwiftUI in Frameworks */,
+				C74275AA24EF54D1007BE7F5 /* Kingfisher in Frameworks */,
+				2AF416C9E2D29EC3E648A673 /* Pods_iOSSwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		46954256C1051BD6DC9A5038 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				36410488507248BA37F45486 /* Pods-iOSSwiftUI.debug.xcconfig */,
+				91F3C341964FC733E37C872C /* Pods-iOSSwiftUI.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		C742757124EE65BE007BE7F5 = {
 			isa = PBXGroup;
 			children = (
 				C742757C24EE65BE007BE7F5 /* iOSSwiftUI */,
 				C742757B24EE65BE007BE7F5 /* Products */,
+				46954256C1051BD6DC9A5038 /* Pods */,
+				DE73123190CDF90D5E06306C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -66,17 +92,15 @@
 		C742757C24EE65BE007BE7F5 /* iOSSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				C74275A324EF4874007BE7F5 /* views */,
 				C742759624EE66A3007BE7F5 /* manager */,
 				C742759124EE6634007BE7F5 /* model */,
 				C742757D24EE65BE007BE7F5 /* AppDelegate.swift */,
 				C742757F24EE65BE007BE7F5 /* SceneDelegate.swift */,
-				C742759924EE699E007BE7F5 /* ContentItemView.swift */,
-				C742758124EE65BE007BE7F5 /* ContentView.swift */,
 				C742758324EE65C0007BE7F5 /* Assets.xcassets */,
 				C742758824EE65C0007BE7F5 /* LaunchScreen.storyboard */,
 				C742758B24EE65C0007BE7F5 /* Info.plist */,
 				C742758524EE65C0007BE7F5 /* Preview Content */,
-				C742759D24EE6D18007BE7F5 /* TestView.swift */,
 			);
 			path = iOSSwiftUI;
 			sourceTree = "<group>";
@@ -106,6 +130,27 @@
 			path = manager;
 			sourceTree = "<group>";
 		};
+		C74275A324EF4874007BE7F5 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				C742759924EE699E007BE7F5 /* ContentItemView.swift */,
+				C742758124EE65BE007BE7F5 /* ContentView.swift */,
+				C742759D24EE6D18007BE7F5 /* ContentDetailView.swift */,
+				C74275A424EF4974007BE7F5 /* ImageListView.swift */,
+				C74275A624EF4BF1007BE7F5 /* ImageItemView.swift */,
+				C74275AD24EF56F3007BE7F5 /* TestView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		DE73123190CDF90D5E06306C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71745FF731620BE97D1DDCCA /* Pods_iOSSwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -113,15 +158,21 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C742758E24EE65C0007BE7F5 /* Build configuration list for PBXNativeTarget "iOSSwiftUI" */;
 			buildPhases = (
+				062713C850C46AA9A2ABA24D /* [CP] Check Pods Manifest.lock */,
 				C742757624EE65BE007BE7F5 /* Sources */,
 				C742757724EE65BE007BE7F5 /* Frameworks */,
 				C742757824EE65BE007BE7F5 /* Resources */,
+				81310F830336A1E08156E26D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = iOSSwiftUI;
+			packageProductDependencies = (
+				C74275A924EF54D1007BE7F5 /* Kingfisher */,
+				C74275AB24EF54D1007BE7F5 /* KingfisherSwiftUI */,
+			);
 			productName = iOSSwiftUI;
 			productReference = C742757A24EE65BE007BE7F5 /* iOSSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -150,6 +201,9 @@
 				Base,
 			);
 			mainGroup = C742757124EE65BE007BE7F5;
+			packageReferences = (
+				C74275A824EF54D1007BE7F5 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = C742757B24EE65BE007BE7F5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -172,19 +226,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		062713C850C46AA9A2ABA24D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iOSSwiftUI-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		81310F830336A1E08156E26D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSSwiftUI/Pods-iOSSwiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iOSSwiftUI/Pods-iOSSwiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iOSSwiftUI/Pods-iOSSwiftUI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C742757624EE65BE007BE7F5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C742759E24EE6D18007BE7F5 /* TestView.swift in Sources */,
+				C742759E24EE6D18007BE7F5 /* ContentDetailView.swift in Sources */,
 				C742757E24EE65BE007BE7F5 /* AppDelegate.swift in Sources */,
+				C74275AE24EF56F3007BE7F5 /* TestView.swift in Sources */,
 				C742759824EE66B4007BE7F5 /* DataManager.swift in Sources */,
 				C742759324EE663F007BE7F5 /* TestItem.swift in Sources */,
+				C74275A524EF4974007BE7F5 /* ImageListView.swift in Sources */,
 				C74275A224EE6F63007BE7F5 /* ImageItem.swift in Sources */,
 				C742759A24EE699E007BE7F5 /* ContentItemView.swift in Sources */,
 				C742758024EE65BE007BE7F5 /* SceneDelegate.swift in Sources */,
 				C742758224EE65BE007BE7F5 /* ContentView.swift in Sources */,
+				C74275A724EF4BF1007BE7F5 /* ImageItemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +417,7 @@
 		};
 		C742758F24EE65C0007BE7F5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36410488507248BA37F45486 /* Pods-iOSSwiftUI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -338,6 +438,7 @@
 		};
 		C742759024EE65C0007BE7F5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 91F3C341964FC733E37C872C /* Pods-iOSSwiftUI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -378,6 +479,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C74275A824EF54D1007BE7F5 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.15.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C74275A924EF54D1007BE7F5 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C74275A824EF54D1007BE7F5 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		C74275AB24EF54D1007BE7F5 /* KingfisherSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C74275A824EF54D1007BE7F5 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = KingfisherSwiftUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C742757224EE65BE007BE7F5 /* Project object */;
 }

@@ -9,11 +9,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    var datas = DataManager().getDataList()
+    var datas = DataManager().getMainDataList()
     var body: some View {
         NavigationView {
             List(datas) { data in
-                NavigationLink(destination: TestView(item: data)) {
+                NavigationLink(destination: ContentDetailView(item: data)) {
                     ContentItemView(item:data)
                 }
                 

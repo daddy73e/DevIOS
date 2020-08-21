@@ -21,6 +21,6 @@ struct ContentItemView: View {
 
 struct ContentItemView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentItemView(item: DataManager().getDataList()[0])
+        ContentItemView(item: DataManager().getMainDataList()[0])
     }
 }
