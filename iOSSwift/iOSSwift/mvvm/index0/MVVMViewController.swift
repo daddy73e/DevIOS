@@ -10,14 +10,13 @@ import UIKit
 import RxCocoa
 import RxSwift
 
-class MVVMViewController: UIViewController {
+class MVVMViewController: BaseViewController {
 
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var btnPlus: UIButton!
     @IBOutlet weak var btnMinus: UIButton!
     
     var viewModel: MVVMViewModel!
-    let disposeBag = DisposeBag()
     
     init() {
         super.init(nibName: "MVVMViewController", bundle: nil)
@@ -29,12 +28,13 @@ class MVVMViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let inputs = MVVMViewModel.Inputs(
             tapPlus: btnPlus.rx.tap.map { _ in },
             tapMinus: btnMinus.rx.tap.map { _ in }
         )
-        
         viewModel = MVVMViewModel(inputs)
+        
         viewModel.number
             .drive(label.rx.text)
             .disposed(by: disposeBag)

@@ -7,30 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C70359C624EB568F006DC8DF /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C70359C424EB568F006DC8DF /* MainTableViewCell.swift */; };
-		C70359C724EB568F006DC8DF /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C70359C524EB568F006DC8DF /* MainTableViewCell.xib */; };
 		C735B39524DB89CD00334224 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735B39424DB89CD00334224 /* AppDelegate.swift */; };
 		C735B39724DB89CD00334224 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735B39624DB89CD00334224 /* SceneDelegate.swift */; };
 		C735B39924DB89CD00334224 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735B39824DB89CD00334224 /* ViewController.swift */; };
 		C735B39C24DB89CD00334224 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C735B39A24DB89CD00334224 /* Main.storyboard */; };
 		C735B39E24DB89CE00334224 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C735B39D24DB89CE00334224 /* Assets.xcassets */; };
 		C735B3A124DB89CE00334224 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C735B39F24DB89CE00334224 /* LaunchScreen.storyboard */; };
+		C73F7D5825465F4E00E19AF0 /* MultipleSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73F7D5725465F4E00E19AF0 /* MultipleSectionModel.swift */; };
 		C75F056124E13D4500429F0F /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75F056024E13D4500429F0F /* Extension.swift */; };
 		C77F392724EB592C00E41A54 /* MVVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77F392524EB592C00E41A54 /* MVVMViewController.swift */; };
 		C77F392824EB592C00E41A54 /* MVVMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C77F392624EB592C00E41A54 /* MVVMViewController.xib */; };
 		C77F392B24EB5E4200E41A54 /* MVVMViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77F392A24EB5E4200E41A54 /* MVVMViewModel.swift */; };
 		C77F392D24EB63EE00E41A54 /* MVVMModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77F392C24EB63EE00E41A54 /* MVVMModel.swift */; };
-		C77F393524EBCAFF00E41A54 /* QRScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77F393324EBCAFF00E41A54 /* QRScanViewController.swift */; };
-		C77F393624EBCAFF00E41A54 /* QRScanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C77F393424EBCAFF00E41A54 /* QRScanViewController.xib */; };
 		C77F393C24EBCCB700E41A54 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C77F393B24EBCCB700E41A54 /* AVFoundation.framework */; };
+		C796424A2542B09F00722B62 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79642492542B09F00722B62 /* Enums.swift */; };
+		C796424F2542B1DE00722B62 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C796424E2542B1DE00722B62 /* BaseViewController.swift */; };
+		C79642C82546592000722B62 /* TitleSteperTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79642C52546592000722B62 /* TitleSteperTableViewCell.swift */; };
+		C79642C92546592000722B62 /* TitleSwitchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79642C62546592000722B62 /* TitleSwitchTableViewCell.swift */; };
+		C79642CA2546592000722B62 /* ImageTitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C79642C72546592000722B62 /* ImageTitleTableViewCell.swift */; };
+		C7C2417F254163F7000A6213 /* TableDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7C2417E254163F7000A6213 /* TableDataViewModel.swift */; };
+		C7CD16832541617C009FED1E /* MultiSecTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7CD16812541617C009FED1E /* MultiSecTableViewController.swift */; };
 		F9C0BAE1420AF47AFA9B6E86 /* Pods_iOSSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D9D0F23B4AB5BAB399A15A24 /* Pods_iOSSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6EAD79D9A78D8E350AF512C9 /* Pods-iOSSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSSwift.release.xcconfig"; path = "Target Support Files/Pods-iOSSwift/Pods-iOSSwift.release.xcconfig"; sourceTree = "<group>"; };
 		784D6840F5361889BB1F8F9A /* Pods-iOSSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSSwift.debug.xcconfig"; path = "Target Support Files/Pods-iOSSwift/Pods-iOSSwift.debug.xcconfig"; sourceTree = "<group>"; };
-		C70359C424EB568F006DC8DF /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
-		C70359C524EB568F006DC8DF /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
 		C735B39124DB89CD00334224 /* iOSSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C735B39424DB89CD00334224 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C735B39624DB89CD00334224 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,14 +41,20 @@
 		C735B39D24DB89CE00334224 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C735B3A024DB89CE00334224 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C735B3A224DB89CE00334224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C73F7D5725465F4E00E19AF0 /* MultipleSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleSectionModel.swift; sourceTree = "<group>"; };
 		C75F056024E13D4500429F0F /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		C77F392524EB592C00E41A54 /* MVVMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewController.swift; sourceTree = "<group>"; };
 		C77F392624EB592C00E41A54 /* MVVMViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MVVMViewController.xib; sourceTree = "<group>"; };
 		C77F392A24EB5E4200E41A54 /* MVVMViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewModel.swift; sourceTree = "<group>"; };
 		C77F392C24EB63EE00E41A54 /* MVVMModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMModel.swift; sourceTree = "<group>"; };
-		C77F393324EBCAFF00E41A54 /* QRScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScanViewController.swift; sourceTree = "<group>"; };
-		C77F393424EBCAFF00E41A54 /* QRScanViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QRScanViewController.xib; sourceTree = "<group>"; };
 		C77F393B24EBCCB700E41A54 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C79642492542B09F00722B62 /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		C796424E2542B1DE00722B62 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		C79642C52546592000722B62 /* TitleSteperTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleSteperTableViewCell.swift; sourceTree = "<group>"; };
+		C79642C62546592000722B62 /* TitleSwitchTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleSwitchTableViewCell.swift; sourceTree = "<group>"; };
+		C79642C72546592000722B62 /* ImageTitleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageTitleTableViewCell.swift; sourceTree = "<group>"; };
+		C7C2417E254163F7000A6213 /* TableDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDataViewModel.swift; sourceTree = "<group>"; };
+		C7CD16812541617C009FED1E /* MultiSecTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiSecTableViewController.swift; sourceTree = "<group>"; };
 		D9D0F23B4AB5BAB399A15A24 /* Pods_iOSSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -93,7 +101,7 @@
 		C735B39324DB89CD00334224 /* iOSSwift */ = {
 			isa = PBXGroup;
 			children = (
-				C77F393224EBCAD600E41A54 /* viewController */,
+				C79642482542B09400722B62 /* utils */,
 				C77F392924EB5DF700E41A54 /* mvvm */,
 				C735B39424DB89CD00334224 /* AppDelegate.swift */,
 				C735B39624DB89CD00334224 /* SceneDelegate.swift */,
@@ -103,13 +111,55 @@
 				C735B39F24DB89CE00334224 /* LaunchScreen.storyboard */,
 				C735B3A224DB89CE00334224 /* Info.plist */,
 				C75F056024E13D4500429F0F /* Extension.swift */,
-				C70359C424EB568F006DC8DF /* MainTableViewCell.swift */,
-				C70359C524EB568F006DC8DF /* MainTableViewCell.xib */,
 			);
 			path = iOSSwift;
 			sourceTree = "<group>";
 		};
+		C73F7D5C2546602200E19AF0 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				C79642C72546592000722B62 /* ImageTitleTableViewCell.swift */,
+				C79642C52546592000722B62 /* TitleSteperTableViewCell.swift */,
+				C79642C62546592000722B62 /* TitleSwitchTableViewCell.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		C73F7D5D2546602900E19AF0 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C7C2417E254163F7000A6213 /* TableDataViewModel.swift */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		C73F7D5E2546604000E19AF0 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				C73F7D5725465F4E00E19AF0 /* MultipleSectionModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		C77F392924EB5DF700E41A54 /* mvvm */ = {
+			isa = PBXGroup;
+			children = (
+				C796424E2542B1DE00722B62 /* BaseViewController.swift */,
+				C7CD1686254161AB009FED1E /* index0 */,
+				C7CD1687254161CE009FED1E /* index1 */,
+			);
+			path = mvvm;
+			sourceTree = "<group>";
+		};
+		C79642482542B09400722B62 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				C79642492542B09F00722B62 /* Enums.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		C7CD1686254161AB009FED1E /* index0 */ = {
 			isa = PBXGroup;
 			children = (
 				C77F392524EB592C00E41A54 /* MVVMViewController.swift */,
@@ -117,16 +167,18 @@
 				C77F392A24EB5E4200E41A54 /* MVVMViewModel.swift */,
 				C77F392C24EB63EE00E41A54 /* MVVMModel.swift */,
 			);
-			path = mvvm;
+			path = index0;
 			sourceTree = "<group>";
 		};
-		C77F393224EBCAD600E41A54 /* viewController */ = {
+		C7CD1687254161CE009FED1E /* index1 */ = {
 			isa = PBXGroup;
 			children = (
-				C77F393324EBCAFF00E41A54 /* QRScanViewController.swift */,
-				C77F393424EBCAFF00E41A54 /* QRScanViewController.xib */,
+				C7CD16812541617C009FED1E /* MultiSecTableViewController.swift */,
+				C73F7D5E2546604000E19AF0 /* model */,
+				C73F7D5D2546602900E19AF0 /* viewModel */,
+				C73F7D5C2546602200E19AF0 /* views */,
 			);
-			path = viewController;
+			path = index1;
 			sourceTree = "<group>";
 		};
 		F6BDE3E2CD656E6255B87925 /* Pods */ = {
@@ -198,11 +250,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C77F393624EBCAFF00E41A54 /* QRScanViewController.xib in Resources */,
 				C77F392824EB592C00E41A54 /* MVVMViewController.xib in Resources */,
 				C735B3A124DB89CE00334224 /* LaunchScreen.storyboard in Resources */,
 				C735B39E24DB89CE00334224 /* Assets.xcassets in Resources */,
-				C70359C724EB568F006DC8DF /* MainTableViewCell.xib in Resources */,
 				C735B39C24DB89CD00334224 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,15 +306,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C77F393524EBCAFF00E41A54 /* QRScanViewController.swift in Sources */,
 				C735B39924DB89CD00334224 /* ViewController.swift in Sources */,
 				C77F392D24EB63EE00E41A54 /* MVVMModel.swift in Sources */,
 				C735B39524DB89CD00334224 /* AppDelegate.swift in Sources */,
+				C7C2417F254163F7000A6213 /* TableDataViewModel.swift in Sources */,
+				C796424F2542B1DE00722B62 /* BaseViewController.swift in Sources */,
+				C79642C92546592000722B62 /* TitleSwitchTableViewCell.swift in Sources */,
 				C77F392724EB592C00E41A54 /* MVVMViewController.swift in Sources */,
+				C79642C82546592000722B62 /* TitleSteperTableViewCell.swift in Sources */,
+				C796424A2542B09F00722B62 /* Enums.swift in Sources */,
 				C735B39724DB89CD00334224 /* SceneDelegate.swift in Sources */,
+				C73F7D5825465F4E00E19AF0 /* MultipleSectionModel.swift in Sources */,
 				C75F056124E13D4500429F0F /* Extension.swift in Sources */,
-				C70359C624EB568F006DC8DF /* MainTableViewCell.swift in Sources */,
+				C7CD16832541617C009FED1E /* MultiSecTableViewController.swift in Sources */,
 				C77F392B24EB5E4200E41A54 /* MVVMViewModel.swift in Sources */,
+				C79642CA2546592000722B62 /* ImageTitleTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
