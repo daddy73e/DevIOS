@@ -1,5 +1,5 @@
 //
-//  TitleSteperTableViewCell.swift
+//  TitleStepperTableViewCell.swift
 //  RxDataSources
 //
 //  Created by Segii Shulga on 4/26/16.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TitleSteperTableViewCell: UITableViewCell {
+class TitleStepperTableViewCell: UITableViewCell {
 
    @IBOutlet private weak var stepper: UIStepper!
    @IBOutlet private  weak var titleLabel: UILabel!

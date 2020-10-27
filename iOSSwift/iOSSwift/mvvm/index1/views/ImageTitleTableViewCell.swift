@@ -9,7 +9,7 @@
 import UIKit
 
 class ImageTitleTableViewCell: UITableViewCell {
-
+    
    @IBOutlet private weak var cellImageView: UIImageView!
    @IBOutlet private weak var titleLabel: UILabel!
 

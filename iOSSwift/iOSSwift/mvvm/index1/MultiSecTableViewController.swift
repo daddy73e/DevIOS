@@ -15,11 +15,20 @@ import Differentiator
 class MultiSecTableViewController: BaseViewController {
     
     @IBOutlet weak var tableView: UITableView!
-    var viewModel: TableDataViewModel!
+    var viewModel: MultipleSecDataViewModelType!
+    
+    init(viewModel: MultipleSecDataViewModelType = MultipleSecDataViewModel()) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        viewModel = MultipleSecDataViewModel()
+        super.init(coder: aDecoder)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel = TableDataViewModel()
         bindUI()
     }
     
@@ -38,7 +47,7 @@ class MultiSecTableViewController: BaseViewController {
                     cell.configure(image: image, title: title)
                     return cell
                 case let .StepperSectionItem(title):
-                    let cell: TitleSteperTableViewCell = table.dequeueReusableCell(forIndexPath: idxPath)
+                    let cell: TitleStepperTableViewCell = table.dequeueReusableCell(forIndexPath: idxPath)
                     cell.configure(title: title)
                     return cell
                 case let .ToggleableSectionItem(title, enabled):
