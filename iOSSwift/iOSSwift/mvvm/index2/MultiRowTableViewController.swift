@@ -39,12 +39,14 @@ class MultiRowTableViewController: BaseViewController {
                                                   for: IndexPath.init(row: row, section: 0)) as! ImageTitleTableViewCell
                 cell.configure(image: item.image, title: item.title)
                 return cell
+                
             case .Stepper:
                 let item:StepperItem = item as! StepperItem
                 let cell = tv.dequeueReusableCell(withIdentifier: "TitleStepperTableViewCell",
                                                   for: IndexPath.init(row: row, section: 0)) as! TitleStepperTableViewCell
                 cell.configure(title: item.title)
                 return cell
+                
             case .Toggle:
                 let item:ToggleItem = item as! ToggleItem
                 let cell = tv.dequeueReusableCell(withIdentifier: "TitleSwitchTableViewCell",

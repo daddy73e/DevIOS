@@ -88,9 +88,12 @@
                                                     <constraint firstAttribute="height" constant="50" id="Wxp-yA-6gS"/>
                                                 </constraints>
                                                 <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                                <state key="normal" title="4. ">
+                                                <state key="normal" title="4. API Req / Res">
                                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="4wf-Xy-6hC" kind="show" id="l9A-tl-8i0"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TVC-cu-Cky">
                                                 <rect key="frame" x="0.0" y="280" width="414" height="50"/>
@@ -446,6 +449,68 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NdJ-Ro-llV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="928.98550724637687" y="-118.52678571428571"/>
+        </scene>
+        <!--Req Res View Controller-->
+        <scene sceneID="DB0-TE-5Q2">
+            <objects>
+                <viewController id="4wf-Xy-6hC" customClass="APIReqResViewController" customModule="iOSSwift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lSh-ke-SY6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bac-SA-SrG">
+                                <rect key="frame" x="367" y="88" width="47" height="50"/>
+                                <state key="normal" title="search"/>
+                                <connections>
+                                    <action selector="tapBtnSearch:" destination="4wf-Xy-6hC" eventType="touchUpInside" id="KLT-oP-NiV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gy4-bm-duD">
+                                <rect key="frame" x="10" y="138" width="394" height="714"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="78F-Ea-xh2">
+                                <rect key="frame" x="0.0" y="88" width="367" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="AAT-fI-Tf4"/>
+                                </constraints>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="LQm-mi-ILR">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="cu8-ic-aWM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bac-SA-SrG" firstAttribute="leading" secondItem="78F-Ea-xh2" secondAttribute="trailing" id="0sw-Eq-ZcI"/>
+                            <constraint firstItem="cu8-ic-aWM" firstAttribute="trailing" secondItem="LQm-mi-ILR" secondAttribute="trailing" id="4b1-EW-IKa"/>
+                            <constraint firstItem="LQm-mi-ILR" firstAttribute="leading" secondItem="cu8-ic-aWM" secondAttribute="leading" id="8k9-YO-nbg"/>
+                            <constraint firstItem="cu8-ic-aWM" firstAttribute="bottom" secondItem="LQm-mi-ILR" secondAttribute="bottom" id="DOJ-6z-Auc"/>
+                            <constraint firstItem="cu8-ic-aWM" firstAttribute="trailing" secondItem="bac-SA-SrG" secondAttribute="trailing" id="Hlu-TR-BHb"/>
+                            <constraint firstItem="LQm-mi-ILR" firstAttribute="top" secondItem="cu8-ic-aWM" secondAttribute="top" id="N3b-zf-ESb"/>
+                            <constraint firstItem="gy4-bm-duD" firstAttribute="top" secondItem="78F-Ea-xh2" secondAttribute="bottom" id="Qwk-Yf-I7i"/>
+                            <constraint firstItem="cu8-ic-aWM" firstAttribute="trailing" secondItem="gy4-bm-duD" secondAttribute="trailing" constant="10" id="Vha-Xz-9qB"/>
+                            <constraint firstItem="bac-SA-SrG" firstAttribute="top" secondItem="cu8-ic-aWM" secondAttribute="top" id="X9h-JD-qTi"/>
+                            <constraint firstItem="78F-Ea-xh2" firstAttribute="leading" secondItem="cu8-ic-aWM" secondAttribute="leading" id="ff6-oa-qzE"/>
+                            <constraint firstItem="78F-Ea-xh2" firstAttribute="top" secondItem="cu8-ic-aWM" secondAttribute="top" id="sP5-zt-SmF"/>
+                            <constraint firstItem="bac-SA-SrG" firstAttribute="bottom" secondItem="78F-Ea-xh2" secondAttribute="bottom" id="tXQ-w0-8lH"/>
+                            <constraint firstItem="cu8-ic-aWM" firstAttribute="bottom" secondItem="gy4-bm-duD" secondAttribute="bottom" constant="10" id="vMg-lx-hHO"/>
+                            <constraint firstItem="gy4-bm-duD" firstAttribute="leading" secondItem="cu8-ic-aWM" secondAttribute="leading" constant="10" id="wE3-rU-sr1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="MzB-Ms-yar"/>
+                    <connections>
+                        <outlet property="indicator" destination="LQm-mi-ILR" id="oIk-Wr-OdR"/>
+                        <outlet property="labelResultText" destination="gy4-bm-duD" id="PJN-a9-zKN"/>
+                        <outlet property="searchBar" destination="78F-Ea-xh2" id="JZP-JI-I1W"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KCr-zM-IOr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="838.39285714285711"/>
         </scene>
     </scenes>
     <resources>
