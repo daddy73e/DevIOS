@@ -15,12 +15,12 @@ class ApiService {
     static let shared = ApiService()
     private static let baseUrl = "https://itunes.apple.com"
     
-    static func fetchAllSearchItemRx(text:String) -> Observable<Data> {
+    static func fetchAllSearchItemRx(text:String) -> Observable<[SearchItem]> {
         return Observable.create { emitter in
             requestSearchItem(term: text, onComplete: { result in
                 switch result {
-                case let .success(dada):
-                    emitter.onNext(dada)
+                case let .success(items):
+                    emitter.onNext(items)
                     emitter.onCompleted()
                 case let .failure(err):
                     emitter.onError(err)
@@ -29,11 +29,10 @@ class ApiService {
             return Disposables.create()
             
         }
-        
     }
     
     static func requestSearchItem(term: String,
-                                  onComplete: @escaping (Result<Data, Error>) -> Void) {
+                                  onComplete: @escaping (Result<[SearchItem], Error>) -> Void) {
         var components = URLComponents(string: "\(baseUrl)/search")!
         components.queryItems = [
             URLQueryItem(name: "term", value: "\(term)"),
@@ -51,19 +50,20 @@ class ApiService {
                 return
             }
             
-            guard let data = data else {
+            do {
+                let json = try JSONSerialization.jsonObject(with: data!) as! [String:Any]
+                let items = self.parseData(json: json)
+                onComplete(.success(items))
+            } catch {
                 let httpResponse = response as! HTTPURLResponse
                 onComplete(.failure(NSError(domain: "no data",
                                             code: httpResponse.statusCode,
                                             userInfo: nil)))
-                return
             }
-            
-            onComplete(.success(data))
         }).resume()
     }
     
-    private func parseData(json: Any) -> [SearchItem] {
+    private static func parseData(json: Any) -> [SearchItem] {
         guard let items = json as? [String: Any]  else {
             return []
         }

@@ -9,7 +9,8 @@
 import UIKit
 import RxCocoa
 import RxSwift
-
+import RxDataSources
+import Differentiator
 
 class APIReqResViewController: UIViewController {
     
@@ -17,27 +18,43 @@ class APIReqResViewController: UIViewController {
     
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var indicator: UIActivityIndicatorView!
-    @IBOutlet weak var labelResultText: UILabel!
+    @IBOutlet weak var tableView: UITableView!
     
     let viewModel = SearchItemViewModel()
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         bindUI()
     }
     
     private func bindUI() {
-        viewModel.activated
-            .subscribe{self.indicator.isHidden = !$0}
+        viewModel.obActivated
+            .subscribeOn(MainScheduler.instance)
+            .subscribe{    
+                self.indicator.isHidden = !$0
+            }
             .disposed(by: disposeBag)
-
         
-    }
-    
-    @IBAction func tapBtnSearch(_ sender: Any) {
-        if let text = searchBar.text {
-            viewModel.searchText.onNext(text)
+        viewModel.obResponseItems.bind(to: tableView.rx.items) { (tv, row, item) -> UITableViewCell in
+            let cell = tv.dequeueReusableCell(withIdentifier: ItemTableViewCell.identifier,
+                                              for: IndexPath.init(row: row, section: 0)) as! ItemTableViewCell
+            cell.configure(txt: item.trackName)
+            return cell
         }
+        .disposed(by: disposeBag)
+        
+        searchBar.rx.text.orEmpty
+            .bind(to:viewModel.obSearchText)
+            .disposed(by: disposeBag)
+        
+        searchBar.rx.searchButtonClicked
+            .bind(to:viewModel.fetchMenus
+        ).disposed(by: disposeBag)
+        
+        searchBar.rx.searchButtonClicked.bind{
+            self.viewModel.obResultText.onNext(self.viewModel.obSearchText.value)
+        }.disposed(by: disposeBag)
+        
     }
     
 }

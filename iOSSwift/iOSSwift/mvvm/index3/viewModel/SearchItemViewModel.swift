@@ -8,31 +8,35 @@
 
 import Foundation
 import RxSwift
+import RxCocoa
 
 class SearchItemViewModel {
+    
     let disposeBag = DisposeBag()
-
-    // INPUT
-    let searchText = BehaviorSubject<String>(value: "")
+    let store = SearchItemStore()
+    let fetchMenus: AnyObserver<Void>
 
     // OUTPUT
-    let activated = BehaviorSubject<Bool>(value: true)
-    let strResult = BehaviorSubject<String>(value: "")
+    let obActivated :Observable<Bool>
+    let obSearchText = BehaviorRelay<String>(value: "")
+    let obResultText = PublishSubject<String>()
+    let obResponseItems = BehaviorSubject<[SearchItem]>(value: [])
 
     init() {
+        let activating = BehaviorSubject<Bool>(value: false)
+        obActivated = activating.distinctUntilChanged()
         
-        let store = SearchItemStore()
-        strResult.do(onNext: { _ in activated.onNext(true)})
-            .flatMap(store.fetchMenus(text:))
+        let fetching = PublishSubject<Void>()
+        fetchMenus = fetching.asObserver()
         
-//        fetchSearchItems
-//            .do(onNext: { _ in activated.onNext(true) })
-//            .flatMap(store.fetchMenus(text: ))
-//            .flatMap(domain.fetchMenus)
-//            .map { $0.map { ViewMenu($0) } }
-//            .do(onNext: { _ in activating.onNext(false) })
-//            .do(onError: { err in error.onNext(err) })
-//            .subscribe(onNext: menus.onNext)
-//            .disposed(by: disposeBag)
+        obResultText
+            .do(onNext: { _ in
+                    activating.onNext(true)  
+            })
+            .flatMap{self.store.fetchMenus(text: $0)}
+            .do(onNext: { _ in activating.onNext(false) })
+            .subscribe(onNext:obResponseItems.onNext)
+            .disposed(by: disposeBag)
     }
+    
 }

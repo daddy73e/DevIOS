@@ -35,21 +35,21 @@ class MultiRowTableViewController: BaseViewController {
             switch item.type {
             case .Image:
                 let item:ImageItem = item as! ImageItem
-                let cell = tv.dequeueReusableCell(withIdentifier: "ImageTitleTableViewCell",
+                let cell = tv.dequeueReusableCell(withIdentifier: ImageTitleTableViewCell.identifier,
                                                   for: IndexPath.init(row: row, section: 0)) as! ImageTitleTableViewCell
                 cell.configure(image: item.image, title: item.title)
                 return cell
                 
             case .Stepper:
                 let item:StepperItem = item as! StepperItem
-                let cell = tv.dequeueReusableCell(withIdentifier: "TitleStepperTableViewCell",
+                let cell = tv.dequeueReusableCell(withIdentifier: TitleStepperTableViewCell.identifier,
                                                   for: IndexPath.init(row: row, section: 0)) as! TitleStepperTableViewCell
                 cell.configure(title: item.title)
                 return cell
                 
             case .Toggle:
                 let item:ToggleItem = item as! ToggleItem
-                let cell = tv.dequeueReusableCell(withIdentifier: "TitleSwitchTableViewCell",
+                let cell = tv.dequeueReusableCell(withIdentifier: TitleSwitchTableViewCell.identifier,
                                                   for: IndexPath.init(row: row, section: 0)) as! TitleSwitchTableViewCell
                 cell.configure(title: item.title, isEnabled: item.enabled)
                 return cell

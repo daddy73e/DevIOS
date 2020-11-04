@@ -9,9 +9,10 @@
 import UIKit
 
 class TitleSwitchTableViewCell: UITableViewCell {
-
-   @IBOutlet private weak var switchControl: UISwitch!
-   @IBOutlet private weak var titleLabel: UILabel!
+    static let identifier = "TitleSwitchTableViewCell"
+    
+    @IBOutlet private weak var switchControl: UISwitch!
+    @IBOutlet private weak var titleLabel: UILabel!
 
     func configure(title: String, isEnabled: Bool) {
         switchControl.isOn = isEnabled
