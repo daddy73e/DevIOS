@@ -29,30 +29,41 @@ class APIReqResViewController: UIViewController {
     
     private func bindUI() {
         viewModel.obActivated
-            .subscribeOn(MainScheduler.instance)
+            .observeOn(MainScheduler.instance)
             .subscribe{    
                 self.indicator.isHidden = !$0
             }
             .disposed(by: disposeBag)
         
-        viewModel.obResponseItems.bind(to: tableView.rx.items) { (tv, row, item) -> UITableViewCell in
-            let cell = tv.dequeueReusableCell(withIdentifier: ItemTableViewCell.identifier,
-                                              for: IndexPath.init(row: row, section: 0)) as! ItemTableViewCell
-            cell.configure(txt: item.trackName)
-            return cell
-        }
-        .disposed(by: disposeBag)
+        viewModel.obResponseItems.bind(to: tableView.rx.items) {
+            (tv, row, item) -> UITableViewCell in
+            if item.type == .responseData {
+                let responseItem:SearchItem = item as! SearchItem
+                let cell = tv.dequeueReusableCell(withIdentifier: ItemTableViewCell.identifier,
+                                                  for: IndexPath.init(row: row, section: 0)) as! ItemTableViewCell
+                cell.configure(txt: responseItem.trackName)
+                return cell
+                
+            } else if item.type == .saved {
+                let savedItem:SavedItem = item as! SavedItem
+                let cell = tv.dequeueReusableCell(withIdentifier: ItemTableViewCell.identifier,
+                                                  for: IndexPath.init(row: row, section: 0)) as! ItemTableViewCell
+                cell.configure(txt: savedItem.name)
+                return cell
+                
+            } else {
+                return UITableViewCell()
+            }
+        }.disposed(by: disposeBag)
+    
         
         searchBar.rx.text.orEmpty
             .bind(to:viewModel.obSearchText)
             .disposed(by: disposeBag)
         
-        searchBar.rx.searchButtonClicked
-            .bind(to:viewModel.fetchMenus
-        ).disposed(by: disposeBag)
-        
         searchBar.rx.searchButtonClicked.bind{
             self.viewModel.obResultText.onNext(self.viewModel.obSearchText.value)
+            self.view.endEditing(true)
         }.disposed(by: disposeBag)
         
     }

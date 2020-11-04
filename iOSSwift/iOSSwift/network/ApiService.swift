@@ -20,6 +20,7 @@ class ApiService {
             requestSearchItem(term: text, onComplete: { result in
                 switch result {
                 case let .success(items):
+                    Settings.shared.searchText = text
                     emitter.onNext(items)
                     emitter.onCompleted()
                 case let .failure(err):

@@ -8,8 +8,8 @@
 
 import UIKit
 
-struct SearchItem:Codable {
-    
+struct SearchItem:TableItem {
+    var type: MultiTableType = .responseData
     let isGameCenterEnabled:Bool
     let isVppDeviceBasedLicensingEnabled:Bool
     let userRatingCountForCurrentVersion:Int

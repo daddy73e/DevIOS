@@ -18,6 +18,9 @@
 		C73F7DC12547A33500E19AF0 /* MultipleRowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73F7DC02547A33500E19AF0 /* MultipleRowModel.swift */; };
 		C73F7DC72547A42400E19AF0 /* MultipleRowDataViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C73F7DC62547A42400E19AF0 /* MultipleRowDataViewModel.swift */; };
 		C7527087255284EB00C4FF11 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7527086255284EB00C4FF11 /* ItemTableViewCell.swift */; };
+		C752708B255293BD00C4FF11 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C752708A255293BD00C4FF11 /* Settings.swift */; };
+		C752708E25529BAA00C4FF11 /* TableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C752708D25529BAA00C4FF11 /* TableItem.swift */; };
+		C752709125529C4000C4FF11 /* SavedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C752709025529C4000C4FF11 /* SavedItem.swift */; };
 		C75F056124E13D4500429F0F /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75F056024E13D4500429F0F /* Extension.swift */; };
 		C77F392724EB592C00E41A54 /* MVVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77F392524EB592C00E41A54 /* MVVMViewController.swift */; };
 		C77F392824EB592C00E41A54 /* MVVMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C77F392624EB592C00E41A54 /* MVVMViewController.xib */; };
@@ -55,6 +58,9 @@
 		C73F7DC02547A33500E19AF0 /* MultipleRowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleRowModel.swift; sourceTree = "<group>"; };
 		C73F7DC62547A42400E19AF0 /* MultipleRowDataViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleRowDataViewModel.swift; sourceTree = "<group>"; };
 		C7527086255284EB00C4FF11 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
+		C752708A255293BD00C4FF11 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		C752708D25529BAA00C4FF11 /* TableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableItem.swift; sourceTree = "<group>"; };
+		C752709025529C4000C4FF11 /* SavedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedItem.swift; sourceTree = "<group>"; };
 		C75F056024E13D4500429F0F /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		C77F392524EB592C00E41A54 /* MVVMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewController.swift; sourceTree = "<group>"; };
 		C77F392624EB592C00E41A54 /* MVVMViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MVVMViewController.xib; sourceTree = "<group>"; };
@@ -210,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				C79642492542B09F00722B62 /* Enums.swift */,
+				C752708A255293BD00C4FF11 /* Settings.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -268,6 +275,8 @@
 			children = (
 				C7F6E5D12550EBAD007F8C42 /* SearchItemStore.swift */,
 				C7F6E5CD2550E0F4007F8C42 /* SearchItem.swift */,
+				C752708D25529BAA00C4FF11 /* TableItem.swift */,
+				C752709025529C4000C4FF11 /* SavedItem.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -398,14 +407,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				C735B39924DB89CD00334224 /* ViewController.swift in Sources */,
+				C752708E25529BAA00C4FF11 /* TableItem.swift in Sources */,
 				C77F392D24EB63EE00E41A54 /* MVVMModel.swift in Sources */,
 				C735B39524DB89CD00334224 /* AppDelegate.swift in Sources */,
 				C7C2417F254163F7000A6213 /* MultipleSecDataViewModel.swift in Sources */,
 				C7527087255284EB00C4FF11 /* ItemTableViewCell.swift in Sources */,
 				C796424F2542B1DE00722B62 /* BaseViewController.swift in Sources */,
 				C79642C92546592000722B62 /* TitleSwitchTableViewCell.swift in Sources */,
+				C752709125529C4000C4FF11 /* SavedItem.swift in Sources */,
 				C7F6E5C82550E014007F8C42 /* ApiService.swift in Sources */,
 				C73F7DC12547A33500E19AF0 /* MultipleRowModel.swift in Sources */,
+				C752708B255293BD00C4FF11 /* Settings.swift in Sources */,
 				C73F7DC72547A42400E19AF0 /* MultipleRowDataViewModel.swift in Sources */,
 				C77F392724EB592C00E41A54 /* MVVMViewController.swift in Sources */,
 				C73F7DBB2547A27C00E19AF0 /* MultiRowTableViewController.swift in Sources */,
