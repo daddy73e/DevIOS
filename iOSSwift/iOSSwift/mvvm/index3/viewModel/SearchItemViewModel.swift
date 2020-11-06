@@ -13,6 +13,8 @@ import RxCocoa
 class SearchItemViewModel {
     
     let disposeBag = DisposeBag()
+    
+    /* INPUT */
     let fetchMenus: AnyObserver<Void>
     let startSearch: AnyObserver<Void>
     let selectedTableItem:PublishSubject<TableItem>
