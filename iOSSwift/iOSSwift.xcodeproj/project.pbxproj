@@ -21,6 +21,7 @@
 		C752708B255293BD00C4FF11 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C752708A255293BD00C4FF11 /* Settings.swift */; };
 		C752708E25529BAA00C4FF11 /* TableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C752708D25529BAA00C4FF11 /* TableItem.swift */; };
 		C752709125529C4000C4FF11 /* SavedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C752709025529C4000C4FF11 /* SavedItem.swift */; };
+		C75270C92553F30300C4FF11 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75270C82553F30300C4FF11 /* DetailViewController.swift */; };
 		C75F056124E13D4500429F0F /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75F056024E13D4500429F0F /* Extension.swift */; };
 		C77F392724EB592C00E41A54 /* MVVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C77F392524EB592C00E41A54 /* MVVMViewController.swift */; };
 		C77F392824EB592C00E41A54 /* MVVMViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C77F392624EB592C00E41A54 /* MVVMViewController.xib */; };
@@ -61,6 +62,7 @@
 		C752708A255293BD00C4FF11 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		C752708D25529BAA00C4FF11 /* TableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableItem.swift; sourceTree = "<group>"; };
 		C752709025529C4000C4FF11 /* SavedItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedItem.swift; sourceTree = "<group>"; };
+		C75270C82553F30300C4FF11 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		C75F056024E13D4500429F0F /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		C77F392524EB592C00E41A54 /* MVVMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewController.swift; sourceTree = "<group>"; };
 		C77F392624EB592C00E41A54 /* MVVMViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MVVMViewController.xib; sourceTree = "<group>"; };
@@ -247,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				C7F6E5C12550DFA6007F8C42 /* APIReqResViewController.swift */,
+				C75270C82553F30300C4FF11 /* DetailViewController.swift */,
 				C7F6E5CC2550E0E9007F8C42 /* model */,
 				C7F6E5C52550DFAF007F8C42 /* viewModel */,
 				C7527085255284C200C4FF11 /* views */,
@@ -433,6 +436,7 @@
 				C77F392B24EB5E4200E41A54 /* MVVMViewModel.swift in Sources */,
 				C7F6E5C22550DFA6007F8C42 /* APIReqResViewController.swift in Sources */,
 				C79642CA2546592000722B62 /* ImageTitleTableViewCell.swift in Sources */,
+				C75270C92553F30300C4FF11 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

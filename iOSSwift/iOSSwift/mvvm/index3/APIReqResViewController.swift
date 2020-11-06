@@ -24,13 +24,28 @@ class APIReqResViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        bindUI()
+        bindInput()
+        bindOutput()
     }
     
-    private func bindUI() {
+    private func bindInput() {
+        tableView.rx.modelSelected(TableItem.self)
+            .bind(to: viewModel.selectedTableItem)
+            .disposed(by: disposeBag)
+        
+        searchBar.rx.text.orEmpty
+            .bind(to:viewModel.obSearchText)
+            .disposed(by: disposeBag)
+        
+        searchBar.rx.searchButtonClicked
+            .bind(to: viewModel.startSearch)
+            .disposed(by: disposeBag)
+    }
+    
+    private func bindOutput() {
         viewModel.obActivated
             .observeOn(MainScheduler.instance)
-            .subscribe{    
+            .subscribe{
                 self.indicator.isHidden = !$0
             }
             .disposed(by: disposeBag)
@@ -55,17 +70,32 @@ class APIReqResViewController: UIViewController {
                 return UITableViewCell()
             }
         }.disposed(by: disposeBag)
+        
+        viewModel.selectedTableItem.subscribe(onNext: { model in
+            if model.type == .responseData {
+                let searchItem = model as! SearchItem
+                self.performSegue(withIdentifier: "showDetail",
+                                  sender: searchItem)
+            } else if model.type == .saved {
+                let savedItem = model as! SavedItem
+                self.performSegue(withIdentifier: "showDetail",
+                                  sender: savedItem)
+            }
+        }).disposed(by: disposeBag)
+    }
     
-        
-        searchBar.rx.text.orEmpty
-            .bind(to:viewModel.obSearchText)
-            .disposed(by: disposeBag)
-        
-        searchBar.rx.searchButtonClicked.bind{
-            self.viewModel.obResultText.onNext(self.viewModel.obSearchText.value)
-            self.view.endEditing(true)
-        }.disposed(by: disposeBag)
-        
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let destination = segue.destination as? DetailViewController {
+            if sender is SearchItem {
+                let item = sender as! SearchItem
+                destination.detailInfo = item.trackName
+            }
+            
+            if sender is SavedItem {
+                let item = sender as! SavedItem
+                destination.detailInfo = item.name
+            }
+        }
     }
     
 }

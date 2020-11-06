@@ -14,6 +14,8 @@ class SearchItemViewModel {
     
     let disposeBag = DisposeBag()
     let fetchMenus: AnyObserver<Void>
+    let startSearch: AnyObserver<Void>
+    let selectedTableItem:PublishSubject<TableItem>
     
     // OUTPUT
     let obActivated: Observable<Bool>
@@ -28,6 +30,7 @@ class SearchItemViewModel {
         /* loadingView */
         let activating = BehaviorSubject<Bool>(value: false)
         obActivated = activating.distinctUntilChanged()
+    
         
         /* data update */
         let fetching = PublishSubject<Void>()
@@ -49,6 +52,14 @@ class SearchItemViewModel {
             }
         }
         obResponseItems.onNext(savedList)
+        
+        /* Search Event*/
+        selectedTableItem = PublishSubject()
+        let searching = PublishSubject<Void>()
+        startSearch = searching.asObserver()
+        searching.subscribe(onNext: {
+            self.obResultText.onNext(self.obSearchText.value)
+        }).disposed(by: disposeBag)
     }
     
 }
