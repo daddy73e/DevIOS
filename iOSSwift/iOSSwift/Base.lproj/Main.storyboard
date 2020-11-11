@@ -3,7 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -13,8 +13,8 @@
         <scene sceneID="U1c-YF-d2E">
             <objects>
                 <navigationController id="o1I-Tx-AUV" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ivC-Gn-AtI">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="ivC-Gn-AtI">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -34,10 +34,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iYm-Vz-zBq">
-                                <rect key="frame" x="0.0" y="88" width="414" height="258"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="258"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="yRe-Zr-2aQ">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="258"/>
+                                        <rect key="frame" x="0.0" y="-52" width="414" height="258"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PmC-TC-epQ">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
@@ -144,7 +144,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="QLK-wk-Gtf">
-                                <rect key="frame" x="0.0" y="88" width="414" height="40"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="40"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pl1-a0-JS4">
                                         <rect key="frame" x="0.0" y="0.0" width="103.5" height="40"/>
@@ -180,7 +180,7 @@
                                 </constraints>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bfM-Gd-cks">
-                                <rect key="frame" x="0.0" y="128" width="414" height="734"/>
+                                <rect key="frame" x="0.0" y="180" width="414" height="682"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImageTitleTableViewCell" rowHeight="88" id="AR6-wd-82R" customClass="ImageTitleTableViewCell" customModule="iOSSwift" customModuleProvider="target">
@@ -314,7 +314,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="t0N-M4-YSu">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImageTitleTableViewCell" rowHeight="88" id="1GB-4G-LJ3" customClass="ImageTitleTableViewCell" customModule="iOSSwift" customModuleProvider="target">
@@ -445,7 +445,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zs3-8o-i5Z">
-                                <rect key="frame" x="0.0" y="138" width="414" height="724"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="ItemTableViewCell" rowHeight="72" id="0R7-Vl-Xnq" customClass="ItemTableViewCell" customModule="iOSSwift" customModuleProvider="target">
@@ -474,15 +474,8 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="78F-Ea-xh2">
-                                <rect key="frame" x="0.0" y="88" width="414" height="50"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="AAT-fI-Tf4"/>
-                                </constraints>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="LQm-mi-ILR">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
                             </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="cu8-ic-aWM"/>
@@ -491,20 +484,16 @@
                             <constraint firstItem="cu8-ic-aWM" firstAttribute="trailing" secondItem="LQm-mi-ILR" secondAttribute="trailing" id="4b1-EW-IKa"/>
                             <constraint firstItem="LQm-mi-ILR" firstAttribute="leading" secondItem="cu8-ic-aWM" secondAttribute="leading" id="8k9-YO-nbg"/>
                             <constraint firstItem="cu8-ic-aWM" firstAttribute="bottom" secondItem="zs3-8o-i5Z" secondAttribute="bottom" id="8qN-GG-Epx"/>
+                            <constraint firstItem="zs3-8o-i5Z" firstAttribute="top" secondItem="cu8-ic-aWM" secondAttribute="top" id="BAN-M1-VRG"/>
                             <constraint firstItem="cu8-ic-aWM" firstAttribute="bottom" secondItem="LQm-mi-ILR" secondAttribute="bottom" id="DOJ-6z-Auc"/>
                             <constraint firstItem="LQm-mi-ILR" firstAttribute="top" secondItem="cu8-ic-aWM" secondAttribute="top" id="N3b-zf-ESb"/>
                             <constraint firstItem="cu8-ic-aWM" firstAttribute="trailing" secondItem="zs3-8o-i5Z" secondAttribute="trailing" id="PF2-t4-WVf"/>
-                            <constraint firstItem="zs3-8o-i5Z" firstAttribute="top" secondItem="78F-Ea-xh2" secondAttribute="bottom" id="U1P-BJ-nN3"/>
-                            <constraint firstItem="cu8-ic-aWM" firstAttribute="trailing" secondItem="78F-Ea-xh2" secondAttribute="trailing" id="UGm-fK-4rk"/>
-                            <constraint firstItem="78F-Ea-xh2" firstAttribute="leading" secondItem="cu8-ic-aWM" secondAttribute="leading" id="ff6-oa-qzE"/>
                             <constraint firstItem="zs3-8o-i5Z" firstAttribute="leading" secondItem="cu8-ic-aWM" secondAttribute="leading" id="ncJ-1S-tn0"/>
-                            <constraint firstItem="78F-Ea-xh2" firstAttribute="top" secondItem="cu8-ic-aWM" secondAttribute="top" id="sP5-zt-SmF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="MzB-Ms-yar"/>
                     <connections>
                         <outlet property="indicator" destination="LQm-mi-ILR" id="oIk-Wr-OdR"/>
-                        <outlet property="searchBar" destination="78F-Ea-xh2" id="JZP-JI-I1W"/>
                         <outlet property="tableView" destination="zs3-8o-i5Z" id="vG1-wg-JiO"/>
                         <segue destination="hvI-kb-nJb" kind="show" identifier="showDetail" id="jKk-FU-9aN"/>
                     </connections>

@@ -18,12 +18,22 @@ class SearchItemStore: SearchFetchable {
         return ApiService.fetchAllSearchItemRx(text: text)
     }
     
-    func fetchSaveItems() -> Observable<[SavedItem]> {
+    func fetchSaveItems(text:String) -> Observable<[SavedItem]> {
+        let searchText = text.lowercased()
         let savedItem = Settings.shared.recentSearchTxt()
         var savedList:[SavedItem] = []
         if savedItem.count > 0 {
-            for each in savedItem {
-                savedList.append(SavedItem(type: .saved, name: each))
+            if !text.isEmpty {
+                for each in savedItem {
+                    let lowEach = each.lowercased()
+                    if lowEach.contains(searchText) {
+                        savedList.append(SavedItem(type: .saved, name: each))
+                    }
+                }
+            } else {
+                for each in savedItem {
+                    savedList.append(SavedItem(type: .saved, name: each))
+                }
             }
         }
         

@@ -17,6 +17,7 @@ class SearchItemViewModel {
     /* INPUT */
     let fetchMenus: AnyObserver<Void>
     let startSearch: AnyObserver<Void>
+    let searchAniFinish: AnyObserver<Void>
     let selectedTableItem = PublishSubject<TableItem>()
     
     // OUTPUT
@@ -32,28 +33,33 @@ class SearchItemViewModel {
         let activating = BehaviorSubject<Bool>(value: false)
         obActivated = activating.distinctUntilChanged()
         
+        
+        
         /* data update */
         let fetching = PublishSubject<Void>()
         fetchMenus = fetching.asObserver()
         obResultText
             .do(onNext: { _ in activating.onNext(true) })
-            .do(onNext: { Settings.shared.searchText = $0 })
             .flatMap{store.fetchSearchItems(text: $0)}
             .do(onNext: { _ in activating.onNext(false)})
             .subscribe(onNext:obResponseItems.onNext)
             .disposed(by: disposeBag)
         
+        let finishAnimating = PublishSubject<Void>()
+        searchAniFinish = finishAnimating.asObserver()
+        
+        
+        
         /* Search text changing Event*/
         obSearchText.asObservable()
-            .filter{$0.isEmpty}
-            .flatMap{_ in store.fetchSaveItems()}
+            .flatMap{store.fetchSaveItems(text: $0)}
             .subscribe(onNext:obResponseItems.onNext)
             .disposed(by: disposeBag)
+        
         
         /* Search action Event*/
         let searching = PublishSubject<Void>()
         startSearch = searching.asObserver()
-    
         searching.subscribe(onNext: {
             self.obResultText.onNext(self.obSearchText.value)
         }).disposed(by: disposeBag)

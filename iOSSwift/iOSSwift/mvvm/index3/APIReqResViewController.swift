@@ -17,7 +17,9 @@ class APIReqResViewController: UIViewController {
     
     private let disposeBag = DisposeBag()
     
-    @IBOutlet weak var searchBar: UISearchBar!
+    let searchController = UISearchController(searchResultsController: nil)
+    var searchBar: UISearchBar { return searchController.searchBar }
+
     @IBOutlet weak var indicator: UIActivityIndicatorView!
     @IBOutlet weak var tableView: UITableView!
     
@@ -25,8 +27,27 @@ class APIReqResViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        config()
         bindInput()
         bindOutput()
+    }
+    
+    private func config() {
+        let boundSpaceView = UIView()
+        boundSpaceView.backgroundColor = .white
+        self.tableView.backgroundView = boundSpaceView
+        tableView.alwaysBounceHorizontal = false
+        searchController.obscuresBackgroundDuringPresentation = false
+        
+        searchBar.placeholder = "App Store"
+        searchBar.searchBarStyle = .default
+        searchBar.backgroundImage = UIImage()
+        searchBar.backgroundColor = .white
+        searchBar.setValue("취소", forKey: "cancelButtonText")
+        navigationItem.title = "검색"
+        navigationItem.hidesSearchBarWhenScrolling = false
+        navigationItem.searchController = searchController
+        definesPresentationContext = true
     }
     
     private func bindInput() {
@@ -42,6 +63,13 @@ class APIReqResViewController: UIViewController {
         searchBar.rx.searchButtonClicked
             .bind(to: viewModel.startSearch)
             .disposed(by: disposeBag)
+        
+        
+        let finishAnimate = searchController.rx.didPresent.map { _ in () }
+        
+        
+        
+        
     }
     
     private func bindOutput() {
@@ -80,8 +108,9 @@ class APIReqResViewController: UIViewController {
                                   sender: searchItem)
             } else if model.type == .saved {
                 let savedItem = model as! SavedItem
-                self.performSegue(withIdentifier: "showDetail",
-                                  sender: savedItem)
+                self.searchBar.text = savedItem.name
+                self.searchBar.becomeFirstResponder()
+                self.viewModel.obResultText.onNext(savedItem.name)
             }
         }).disposed(by: disposeBag)
     }
@@ -96,6 +125,8 @@ class APIReqResViewController: UIViewController {
             if sender is SavedItem {
                 let item = sender as! SavedItem
                 destination.detailInfo = item.name
+                
+                /* 변경 */
             }
         }
     }
