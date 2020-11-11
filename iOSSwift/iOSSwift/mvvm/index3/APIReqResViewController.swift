@@ -11,6 +11,7 @@ import RxCocoa
 import RxSwift
 import RxDataSources
 import Differentiator
+import RxViewController
 
 class APIReqResViewController: UIViewController {
     
@@ -29,6 +30,7 @@ class APIReqResViewController: UIViewController {
     }
     
     private func bindInput() {
+        
         tableView.rx.modelSelected(TableItem.self)
             .bind(to: viewModel.selectedTableItem)
             .disposed(by: disposeBag)

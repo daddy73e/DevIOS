@@ -17,14 +17,13 @@ class SearchItemViewModel {
     /* INPUT */
     let fetchMenus: AnyObserver<Void>
     let startSearch: AnyObserver<Void>
-    let selectedTableItem:PublishSubject<TableItem>
+    let selectedTableItem = PublishSubject<TableItem>()
     
     // OUTPUT
     let obActivated: Observable<Bool>
     let obSearchText = BehaviorRelay<String>(value: "")
     let obResultText = PublishSubject<String>()
     let obResponseItems = BehaviorSubject<[TableItem]>(value: [])
-    var obSavedSearchList = BehaviorSubject<[String]>(value: [])
     
     init() {
         let store = SearchItemStore()
@@ -32,7 +31,6 @@ class SearchItemViewModel {
         /* loadingView */
         let activating = BehaviorSubject<Bool>(value: false)
         obActivated = activating.distinctUntilChanged()
-    
         
         /* data update */
         let fetching = PublishSubject<Void>()
@@ -40,28 +38,24 @@ class SearchItemViewModel {
         obResultText
             .do(onNext: { _ in activating.onNext(true) })
             .do(onNext: { Settings.shared.searchText = $0 })
-            .flatMap{store.fetchMenus(text: $0)}
+            .flatMap{store.fetchSearchItems(text: $0)}
             .do(onNext: { _ in activating.onNext(false)})
             .subscribe(onNext:obResponseItems.onNext)
             .disposed(by: disposeBag)
         
-        /* saved data update */
-        let savedItem = Settings.shared.recentSearchTxt()
-        var savedList:[SavedItem] = []
-        if savedItem.count > 0 {
-            for each in savedItem {
-                savedList.append(SavedItem(type: .saved, name: each))
-            }
-        }
-        obResponseItems.onNext(savedList)
+        /* Search text changing Event*/
+        obSearchText.asObservable()
+            .filter{$0.isEmpty}
+            .flatMap{_ in store.fetchSaveItems()}
+            .subscribe(onNext:obResponseItems.onNext)
+            .disposed(by: disposeBag)
         
-        /* Search Event*/
-        selectedTableItem = PublishSubject()
+        /* Search action Event*/
         let searching = PublishSubject<Void>()
         startSearch = searching.asObserver()
+    
         searching.subscribe(onNext: {
             self.obResultText.onNext(self.obSearchText.value)
         }).disposed(by: disposeBag)
     }
-    
 }
