@@ -37,7 +37,7 @@
                                 <rect key="frame" x="0.0" y="140" width="414" height="258"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="yRe-Zr-2aQ">
-                                        <rect key="frame" x="0.0" y="-52" width="414" height="258"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="258"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PmC-TC-epQ">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="50"/>
@@ -444,7 +444,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zs3-8o-i5Z">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zs3-8o-i5Z">
                                 <rect key="frame" x="0.0" y="140" width="414" height="722"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
@@ -456,16 +456,27 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y29-1z-0Jf">
-                                                    <rect key="frame" x="30" y="21" width="42" height="30"/>
+                                                    <rect key="frame" x="30" y="21" width="354" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vdY-0E-kLm">
+                                                    <rect key="frame" x="30" y="71" width="384" height="1"/>
+                                                    <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="Zvt-rZ-9tp"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="y29-1z-0Jf" secondAttribute="trailing" constant="10" id="LMP-Yi-YLQ"/>
+                                                <constraint firstAttribute="bottom" secondItem="vdY-0E-kLm" secondAttribute="bottom" id="Zbc-Wo-q1h"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="y29-1z-0Jf" secondAttribute="bottom" constant="10" id="cPz-fI-z4u"/>
+                                                <constraint firstAttribute="trailing" secondItem="vdY-0E-kLm" secondAttribute="trailing" id="ds4-J9-Muy"/>
                                                 <constraint firstItem="y29-1z-0Jf" firstAttribute="leading" secondItem="fel-6s-aZ6" secondAttribute="leadingMargin" constant="10" id="q7y-it-LKr"/>
                                                 <constraint firstItem="y29-1z-0Jf" firstAttribute="top" secondItem="fel-6s-aZ6" secondAttribute="topMargin" constant="10" id="qFx-Uc-foZ"/>
+                                                <constraint firstItem="vdY-0E-kLm" firstAttribute="leading" secondItem="fel-6s-aZ6" secondAttribute="leading" constant="30" id="xAP-QB-Pnn"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
@@ -500,7 +511,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KCr-zM-IOr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-509" y="911"/>
+            <point key="canvasLocation" x="-510.14492753623193" y="910.71428571428567"/>
         </scene>
         <!--Detail View Controller-->
         <scene sceneID="ZS4-Zz-W45">
@@ -537,6 +548,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

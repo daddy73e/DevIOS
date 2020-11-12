@@ -60,16 +60,26 @@ class APIReqResViewController: UIViewController {
             .bind(to:viewModel.obSearchText)
             .disposed(by: disposeBag)
         
-        searchBar.rx.searchButtonClicked
-            .bind(to: viewModel.startSearch)
+        searchController.rx.willPresent
+            .map{return false}
+            .bind(to: viewModel.obShowTable)
             .disposed(by: disposeBag)
         
+        searchController.rx.didPresent
+            .map{return true}
+            .bind(to: viewModel.obShowTable)
+            .disposed(by: disposeBag)
         
-        let finishAnimate = searchController.rx.didPresent.map { _ in () }
+        searchBar.rx.searchButtonClicked
+            .map { return (self.searchBar.text ?? "") }
+            .bind(to: viewModel.obResultText)
+            .disposed(by: disposeBag)
         
-        
-        
-        
+        searchBar.rx.cancelButtonClicked
+            .map { return ""}
+            .bind(to: viewModel.obSearchText)
+            .disposed(by: disposeBag)
+
     }
     
     private func bindOutput() {
@@ -79,6 +89,12 @@ class APIReqResViewController: UIViewController {
                 self.indicator.isHidden = !$0
             }
             .disposed(by: disposeBag)
+        
+        viewModel.isShowTable
+            .observeOn(MainScheduler.instance)
+            .subscribe{
+                self.animate(isShow: $0)
+            }.disposed(by: disposeBag)
         
         viewModel.obResponseItems.bind(to: tableView.rx.items) {
             (tv, row, item) -> UITableViewCell in
@@ -113,6 +129,24 @@ class APIReqResViewController: UIViewController {
                 self.viewModel.obResultText.onNext(savedItem.name)
             }
         }).disposed(by: disposeBag)
+    }
+    
+    public func animate(isShow:Bool) {
+        if isShow {
+            self.tableView.alpha = 0
+        } else {
+            self.tableView.alpha = 1
+        }
+        
+        UIView.animate(withDuration: 0.3) {
+            if isShow {
+                self.tableView.alpha = 1
+            } else {
+                self.tableView.alpha = 0
+            }
+            self.tableView.isHidden = !isShow
+            self.view.layoutIfNeeded()
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

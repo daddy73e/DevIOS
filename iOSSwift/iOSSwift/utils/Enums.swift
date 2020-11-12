@@ -13,3 +13,11 @@ enum TableType {
     case two
     case three
 }
+
+
+enum ResultType {
+    case empty
+    case savedAll
+    case savedFilter
+    case search
+}
