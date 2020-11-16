@@ -51,23 +51,19 @@ class APIReqResViewController: UIViewController {
     }
     
     private func bindInput() {
+    
+        let willAppear = rx.viewWillAppear.map { _ in return ""}
+        let editTxt = searchBar.rx.text.orEmpty.asObservable()
+        let cancelClick = searchBar.rx.cancelButtonClicked.map { return ""}
+        
+        Observable.merge([willAppear,
+                          editTxt,
+                          cancelClick])
+            .bind(to: viewModel.obSearchText)
+            .disposed(by: disposeBag)
         
         tableView.rx.modelSelected(TableItem.self)
             .bind(to: viewModel.selectedTableItem)
-            .disposed(by: disposeBag)
-        
-        searchBar.rx.text.orEmpty
-            .bind(to:viewModel.obSearchText)
-            .disposed(by: disposeBag)
-        
-        searchController.rx.willPresent
-            .map{return false}
-            .bind(to: viewModel.obShowTable)
-            .disposed(by: disposeBag)
-        
-        searchController.rx.didPresent
-            .map{return true}
-            .bind(to: viewModel.obShowTable)
             .disposed(by: disposeBag)
         
         searchBar.rx.searchButtonClicked
@@ -75,11 +71,21 @@ class APIReqResViewController: UIViewController {
             .bind(to: viewModel.obResultText)
             .disposed(by: disposeBag)
         
-        searchBar.rx.cancelButtonClicked
-            .map { return ""}
-            .bind(to: viewModel.obSearchText)
+        let willPresent = searchController.rx.willPresent
+            .map{return false}
+        let didPresent = searchController.rx.willPresent
+            .map{return true}
+        let willDismiss = searchController.rx.willDismiss
+            .map{return false}
+        let didDismiss = searchController.rx.didDismiss
+            .map{return true}
+        
+        Observable.merge([willPresent,
+                          didPresent,
+                          willDismiss,
+                          didDismiss])
+            .bind(to: viewModel.obShowTable)
             .disposed(by: disposeBag)
-
     }
     
     private func bindOutput() {
