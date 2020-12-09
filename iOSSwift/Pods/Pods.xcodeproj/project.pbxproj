@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00FA1801533D853DDBCE33A57D28D648 /* PublishRelay+Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A31BDD469D7DBF1270CB78DC5CD76D83 /* PublishRelay+Signal.swift */; };
+		025AC0E87D78192604F1CEDFA34277CC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A24760488A40715894A66B19A64F6C8 /* Foundation.framework */; };
 		02C64A705AFBB72766D93EC1EF5CD60C /* UIScrollView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD57EE13E32C260D04B5DA3CBC45F3DB /* UIScrollView+Rx.swift */; };
 		032BBEA3B309847368F1898C31982568 /* AsyncSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E58FF7E2AF138E3A7C1B2A4E2D8D5F8 /* AsyncSubject.swift */; };
 		037CB353A551FEC8DCB6ABDCC3246DB3 /* AsyncLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAA0D8F6DB327CF776AD01E7D0149FE /* AsyncLock.swift */; };
@@ -16,7 +17,6 @@
 		040B4F697ED649870D356B27CC156140 /* RecursiveScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D2E1C77962C1BBE86446CFA616E56B4 /* RecursiveScheduler.swift */; };
 		056535334480C358D9A08134EE3DC57F /* HistoricalScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24B92FBAC31BE732CE8FDCE3BF9DA342 /* HistoricalScheduler.swift */; };
 		06504FFE7AB5C57B2E1626C35E42023A /* ControlEvent+Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3274FA4101E2AE6CA4883E31A8D9A4 /* ControlEvent+Signal.swift */; };
-		078528915ABA677900726FAE8A8D0D05 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341250A5102D54684E469C9B84593C33 /* Foundation.framework */; };
 		092A4F9CE641DEB89A23D950B2A50419 /* Scan.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC35581634D099D99DC53039822052E /* Scan.swift */; };
 		09C343827DCEFCCAFB19D93FB5C09479 /* PriorityQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A420944028ABC23830BB4D0CC2092D21 /* PriorityQueue.swift */; };
 		09FE161DE9B67F021D7CCCE083EA3B1C /* Diff.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBBBB43EAFDA7384B10D14FC7FBFE714 /* Diff.swift */; };
@@ -102,7 +102,6 @@
 		3EB68D708D9BF6E91954530DA6D94393 /* PublishRelay.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAE9A73193A32F3617A579FA1AF99862 /* PublishRelay.swift */; };
 		3F81B102053DDC811FC63BDDFCFEC5CA /* TakeLast.swift in Sources */ = {isa = PBXBuildFile; fileRef = D258C382BF78DCAB7938D6FBEA88E248 /* TakeLast.swift */; };
 		3FA5F603F1863159A95EAA4C076F7D85 /* LockOwnerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6193A31D7CF945D80B979FDE39F17FD5 /* LockOwnerType.swift */; };
-		401F9F7367A22553267C5E077884FC4D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341250A5102D54684E469C9B84593C33 /* Foundation.framework */; };
 		420A2BD7BA7ED4D1FD1315A399F14499 /* Occupiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F41291E47013FE16D7F113C463C11F /* Occupiable.swift */; };
 		439197DD2AAEE0595B8DA4474C4595CA /* BehaviorRelay+Driver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AD2F8E3D074F92E529C106374E0749 /* BehaviorRelay+Driver.swift */; };
 		44B0BF2665B93BA05D05FBE47BEF7B1B /* NSButton+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B83CAADDB169957B1FFA23F807BE4E6 /* NSButton+Rx.swift */; };
@@ -154,6 +153,7 @@
 		6C26F3C963A7899187060AFCF1032BBB /* OperationQueueScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 511611CE87D1A0CF41075CC7D4B9C8DB /* OperationQueueScheduler.swift */; };
 		6C7588DA1BF40147CF320220C7AC8AAC /* DisposeBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAEFB5DF696B389219A9EDB40547BA4 /* DisposeBag.swift */; };
 		6E5FD487F5200FFE41A8590F1C80D6A3 /* UISwitch+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1328D46D6D7ED327ACC84B998FBE6D6E /* UISwitch+Rx.swift */; };
+		6F5D6D319DF1E83F12FC212F5A53317E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A24760488A40715894A66B19A64F6C8 /* Foundation.framework */; };
 		716FD05A624B0B9ECB0A8B8019BE000E /* RxTableViewDataSourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC6E7BB1D9AB94E6DFBA5D07351EB4E9 /* RxTableViewDataSourceType.swift */; };
 		722A8101CB82CC9CA36FBDCECCB4A073 /* CompactMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8EB0ECDF1AC56175C6E03E91C82EC28 /* CompactMap.swift */; };
 		72521FC1A240438582D88313DA2F71B3 /* Signal.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED48B4F2431014B9E2F755C10BD3D8C /* Signal.swift */; };
@@ -165,8 +165,8 @@
 		74872B2FC64CC6125CCEF48562B0671E /* ControlTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4BE00C75E9A18F316AB18088B5A661 /* ControlTarget.swift */; };
 		757CC5DA54A7852DDC2938A51AA9AE8E /* FloatingPointType+IdentifiableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAADCFFB0D9AEE39CC9B8D1A0DD76B92 /* FloatingPointType+IdentifiableType.swift */; };
 		760178B71CDA56FA10A78568F286086C /* ObservableConvertibleType+SharedSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D366E4B1898DFB696EE7FE905CADD61 /* ObservableConvertibleType+SharedSequence.swift */; };
+		76D650488BD58FD146D61B9D1393CAE6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A24760488A40715894A66B19A64F6C8 /* Foundation.framework */; };
 		788BF9984068902218DC21CA5AF3B4E1 /* BehaviorRelay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7203201ECE0354306A7F503F1F596E74 /* BehaviorRelay.swift */; };
-		78B6E21A52B28C9BB6CC748847EC8C3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341250A5102D54684E469C9B84593C33 /* Foundation.framework */; };
 		7918990D1E1E5BFDDFF181C6DBDB458F /* AnonymousDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16B367E1CD7E3964028ECD97ABB97C80 /* AnonymousDisposable.swift */; };
 		796616B2692253493BC8674B1FB367FE /* RxTableViewDataSourceProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60866E406CCBE9ED33919F24911DC2E0 /* RxTableViewDataSourceProxy.swift */; };
 		798D1EEBE9362AAACDA2643E9E6B24EA /* RxPickerViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 593C1663186A99D098D24A34A20AFF8D /* RxPickerViewAdapter.swift */; };
@@ -174,7 +174,6 @@
 		79D8DFB7CBE9C31ACD4EE8B0CF8C9495 /* VirtualTimeScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DE21C6147FB2FC4EBF07C286EBEDC3 /* VirtualTimeScheduler.swift */; };
 		7A00AC4F9139FB78619C8F298F8283B4 /* UIBarButtonItem+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64941715E265BEB7752CD35F96FE4CC7 /* UIBarButtonItem+Rx.swift */; };
 		7A3F1B290DB9B756DD2F2E63B4B071BD /* ConcurrentDispatchQueueScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6CEB11573CCAA10352C0861A132F4AD /* ConcurrentDispatchQueueScheduler.swift */; };
-		7A76F0FEA6A8C3B543E9A5AB5EBCF2AF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341250A5102D54684E469C9B84593C33 /* Foundation.framework */; };
 		7A93A22BD86309270AC44C644B7501FE /* _RX.h in Headers */ = {isa = PBXBuildFile; fileRef = D0636A6349A324BF74C55DE3F61C42B8 /* _RX.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		7AFE74F48CEF67A13FB97E832DABCD99 /* BehaviorSubject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C984CCEDBD321967DF146BE4E60989F0 /* BehaviorSubject.swift */; };
 		7B89A3FFC01803E264A95FEC8BC0605C /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A5BECDE761C833187A0AEB4D402813C /* RxSwift.framework */; };
@@ -185,12 +184,12 @@
 		80AA5AEFA71FA484B90D7B0EF7F9198D /* UITabBarController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A7DDE84AC04904349448073393F9EF /* UITabBarController+Rx.swift */; };
 		8117470A6E1CF87DF2049262E34119F3 /* InfiniteSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D685769F262C4DB01AE7F6B7C2AA1DC /* InfiniteSequence.swift */; };
 		818467089EA0FB5393D5C454C011BCDC /* BooleanDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29254F958C3DBAACFC24D999B7026AE0 /* BooleanDisposable.swift */; };
+		82F2025EAC1DBB202A259053FA352899 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A24760488A40715894A66B19A64F6C8 /* Foundation.framework */; };
 		848962B9F4B436F346D49915EC377E8C /* ConcurrentMainScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A006E76439B8B66A8BD9A4CC4F05C08 /* ConcurrentMainScheduler.swift */; };
 		84BC69EE9F9CD1220D08604E383199E0 /* RxRelay-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EEDC93B6E4B84BD1178A7D2F4AF1B64B /* RxRelay-dummy.m */; };
 		85557BB8ADEDB23D463325DE651CF458 /* UIPickerView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441BB12D85C9580D6D94D46381AF1C03 /* UIPickerView+Rx.swift */; };
 		863063076FA9B3F19116712F20C3FE5F /* Observable+Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F97C00433DFC5FF53FA64FFE1C7D0C8 /* Observable+Optional.swift */; };
 		86FB0771E04ED3CCAF7DB95BA8B3D910 /* SectionedViewDataSourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B14BD14C0813B29C3D4A1B8E7CE6330 /* SectionedViewDataSourceType.swift */; };
-		87B32F03152DE49DB485D5C619801FE9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341250A5102D54684E469C9B84593C33 /* Foundation.framework */; };
 		87DA86D77902ACF17437E16E77A0D6E0 /* _RXObjCRuntime.h in Headers */ = {isa = PBXBuildFile; fileRef = C300C0E74F4A08C4969D504EEFF35BE2 /* _RXObjCRuntime.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		89A897C9F75E0CBA4E3A078FD8B7CF72 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B6519487F74305164ACE640E648FA40 /* Map.swift */; };
 		8AC52D810EE68DC7B60D1DC3358A337C /* RxSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 60BF63ACC67EB4C357EC2273C8130C34 /* RxSwift-dummy.m */; };
@@ -199,6 +198,7 @@
 		8D347BF3B80C9984DB0930C3F6683A18 /* NSControl+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA53865D4CEE979E6470864434A783D /* NSControl+Rx.swift */; };
 		8D79AFD2E1130155B41B963CE4828250 /* RefCountDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBFCCB63155A95ECC8219AF635926426 /* RefCountDisposable.swift */; };
 		8EFE85C5F1EB7D1C1173AFCEF47DAC45 /* KVORepresentable+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4023B47098D04773213240413C0E417 /* KVORepresentable+Swift.swift */; };
+		8FE058E3EDD44F8D5CB105D915A9D34B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A24760488A40715894A66B19A64F6C8 /* Foundation.framework */; };
 		903230A70B77C4891D1AB14C0D5CFB7C /* WKWebView+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38CDC91A278EFE02AD04D4AC12FE4043 /* WKWebView+Rx.swift */; };
 		90996B6860604A7396CBBC7E0C6E7205 /* SkipWhile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C09D24FEBC41EA338082720646936EC /* SkipWhile.swift */; };
 		91535A246B082A42DC545359AC48D811 /* Zip+arity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF87C3A19C7299F2480FB0DBA02BF595 /* Zip+arity.swift */; };
@@ -235,8 +235,9 @@
 		A645856411CD83CC21C7D801272669F5 /* Platform.Darwin.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2365FC9F64F2D2FF53F5817452AE977 /* Platform.Darwin.swift */; };
 		A7499823504B074D48F9E0C2C77E4AE2 /* Differentiator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 484E10880817D32EC99CBAF1F920D71D /* Differentiator.framework */; };
 		A80BEBF400538B5FA5ADE6BB69F117CB /* Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BCDA62B7EEF94743BF396928229925 /* Empty.swift */; };
-		A8545FAE762F1B8D44106432F950ABBA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341250A5102D54684E469C9B84593C33 /* Foundation.framework */; };
+		A9357EBC2D7A15D3E3891A27CC8FE8CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A24760488A40715894A66B19A64F6C8 /* Foundation.framework */; };
 		AA85D6378FE7C780782015ADCBEAE2D5 /* AddRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1480802172B2D507355F5046F1180937 /* AddRef.swift */; };
+		AB4B17F23796DB20A0A689EDDBC92D77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A24760488A40715894A66B19A64F6C8 /* Foundation.framework */; };
 		B0528F277050656E75ADE1D065FC37B8 /* KVORepresentable+CoreGraphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2BFC24BF49F10F9192F9A67F8565EB2 /* KVORepresentable+CoreGraphics.swift */; };
 		B0DD649980EDAC434F9A3E1B072254BB /* NSViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59AEA1493E2729B5798B2F5EBFE3F03 /* NSViewController+Rx.swift */; };
 		B1794D618972A94DF738F4903056B34B /* Changeset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CA0C0312BDFD8C9439145E5006259DD /* Changeset.swift */; };
@@ -296,6 +297,7 @@
 		D7ABEF37F2331E86C4DAEBD757DE878F /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1594DE3D138858738216EF06783CF6D2 /* RxCocoa.framework */; };
 		D7FD17D9CF2032B039592FED1FC5B584 /* Window.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2BE632E82CA170ECE47252A674D5C1F /* Window.swift */; };
 		D83C68850F8A3C76DE97A0551A818F31 /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E027E2E2BEE23CF92E84B441E6136C0 /* TextInput.swift */; };
+		D9116E176983DC48043924D0063D642B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A24760488A40715894A66B19A64F6C8 /* Foundation.framework */; };
 		D9BA5B238765E5E2D796D47246F748F3 /* UITabBarItem+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C0382BADB1F4BAA355EBD58EF1EB40 /* UITabBarItem+Rx.swift */; };
 		DAB39BE57F162FCB396D168419104025 /* IdentifiableValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F033C69748AF037C561A2A2494523F6 /* IdentifiableValue.swift */; };
 		DB2D57AF81BF92D637AC95F3582CC085 /* RxPickerViewDataSourceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC9BED89B9CFBE9BD098CF28E047D81 /* RxPickerViewDataSourceType.swift */; };
@@ -308,7 +310,6 @@
 		E353963F5CCD7BB98C25A6A35A3D3360 /* Zip+Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD7BEC2529B183B52DC1C5F86018ED20 /* Zip+Collection.swift */; };
 		E3B8690153448DB7BB199D4FB8F1E90F /* SchedulerType+SharedSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68748E895F373511BFBD33FBAE95A7D6 /* SchedulerType+SharedSequence.swift */; };
 		E3E9FB25C28492A6F6A05C76767ADECD /* RxSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A3A990E2189259F70630878337B7D9DF /* RxSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E405BEE5687735D0ECCD36B5686F3911 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341250A5102D54684E469C9B84593C33 /* Foundation.framework */; };
 		E409B06E19E7C5C0787823FDD6A941A6 /* SchedulerServices+Emulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76DC2C5D1704D90AEFB38B5926BDEE1D /* SchedulerServices+Emulation.swift */; };
 		E40CDDB584E09DED115961075D140A91 /* RxCollectionViewSectionedAnimatedDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EC808B08ED828DE6B52C366C0832631 /* RxCollectionViewSectionedAnimatedDataSource.swift */; };
 		E41B0CA001495CC131860660854E2950 /* ObservableType+PrimitiveSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEB70BE62F3D7AFF7AF567EC7AFE5D2 /* ObservableType+PrimitiveSequence.swift */; };
@@ -346,7 +347,6 @@
 		F469F328E4AF4D081BBF34B0FCEA444E /* ElementAt.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF63DC6EA40D8C3FAD3FFBAD082FA548 /* ElementAt.swift */; };
 		F66F2E3043D3A6CD14C0BAE24776E123 /* Disposables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EDFC7D8ED14AB3586D437EB112FDBC8 /* Disposables.swift */; };
 		F8352EF2DCE409621CE47B5F33AC5BF9 /* Pods-iOSSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 484E1D8E7CC4963DFA54038D6A43B17B /* Pods-iOSSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F83790F5BAB299EED1FC9F314E8D011D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341250A5102D54684E469C9B84593C33 /* Foundation.framework */; };
 		F88602DEA5D139BDFF12CEDD838BE081 /* UILabel+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE7667C6CE58960DE378388438CA9D8F /* UILabel+Rx.swift */; };
 		FA5673DCE4F978423E76ED4AA9EC2320 /* AnyObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF277F3B1CE4055F2A9DA0A07681547A /* AnyObserver.swift */; };
 		FB1F62B2A744B23A349CF8877CF2A09B /* RxPickerViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 079B3880CD9DA9FF303B76612F805E33 /* RxPickerViewAdapter.swift */; };
@@ -566,7 +566,6 @@
 		32F7AD998F9024EFAAB3DC11307F63C4 /* ShareReplayScope.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShareReplayScope.swift; path = RxSwift/Observables/ShareReplayScope.swift; sourceTree = "<group>"; };
 		33BD4D6A73829F2BA26D65B477656BE5 /* RxCollectionViewDelegateProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxCollectionViewDelegateProxy.swift; path = RxCocoa/iOS/Proxies/RxCollectionViewDelegateProxy.swift; sourceTree = "<group>"; };
 		33C823E19E67EBC5C2C355F0924E4E32 /* Errors.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Errors.swift; path = RxSwift/Errors.swift; sourceTree = "<group>"; };
-		341250A5102D54684E469C9B84593C33 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		35BEE29F504E1F7F858C44A092D12D7B /* RxCocoa.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RxCocoa.h; path = RxCocoa/RxCocoa.h; sourceTree = "<group>"; };
 		37854D2FCFC78C9B39441411AF14E380 /* Pods-iOSSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOSSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		378FD62A88073645CB33835C57F9033D /* RxCollectionViewDataSourceProxy.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RxCollectionViewDataSourceProxy.swift; path = RxCocoa/iOS/Proxies/RxCollectionViewDataSourceProxy.swift; sourceTree = "<group>"; };
@@ -643,6 +642,7 @@
 		68748E895F373511BFBD33FBAE95A7D6 /* SchedulerType+SharedSequence.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SchedulerType+SharedSequence.swift"; path = "RxCocoa/Traits/SharedSequence/SchedulerType+SharedSequence.swift"; sourceTree = "<group>"; };
 		692F92D73EC27270EA9CC9575C3E65B6 /* RxDataSources.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RxDataSources.framework; path = RxDataSources.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6990C9C513B9216ABA699DBAF3230817 /* ToArray.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToArray.swift; path = RxSwift/Observables/ToArray.swift; sourceTree = "<group>"; };
+		6A24760488A40715894A66B19A64F6C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6B14BD14C0813B29C3D4A1B8E7CE6330 /* SectionedViewDataSourceType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SectionedViewDataSourceType.swift; path = RxCocoa/Common/SectionedViewDataSourceType.swift; sourceTree = "<group>"; };
 		6EEDC7F56BEF62C38E1849BCBFA08B07 /* Differentiator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Differentiator-dummy.m"; sourceTree = "<group>"; };
 		6F1E8968E115CEA026B5631BC8D4688A /* RxCocoa-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RxCocoa-Info.plist"; sourceTree = "<group>"; };
@@ -873,7 +873,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				078528915ABA677900726FAE8A8D0D05 /* Foundation.framework in Frameworks */,
+				A9357EBC2D7A15D3E3891A27CC8FE8CA /* Foundation.framework in Frameworks */,
 				598FFFD4D64B8A54CD141F10274D8F4F /* RxRelay.framework in Frameworks */,
 				7B89A3FFC01803E264A95FEC8BC0605C /* RxSwift.framework in Frameworks */,
 			);
@@ -884,7 +884,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7499823504B074D48F9E0C2C77E4AE2 /* Differentiator.framework in Frameworks */,
-				7A76F0FEA6A8C3B543E9A5AB5EBCF2AF /* Foundation.framework in Frameworks */,
+				8FE058E3EDD44F8D5CB105D915A9D34B /* Foundation.framework in Frameworks */,
 				72DF552CB4E65FE48FC6E13F8FBB5949 /* RxCocoa.framework in Frameworks */,
 				329CB7371FB1545954DD5888718FFC18 /* RxSwift.framework in Frameworks */,
 			);
@@ -894,7 +894,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				401F9F7367A22553267C5E077884FC4D /* Foundation.framework in Frameworks */,
+				6F5D6D319DF1E83F12FC212F5A53317E /* Foundation.framework in Frameworks */,
 				D7ABEF37F2331E86C4DAEBD757DE878F /* RxCocoa.framework in Frameworks */,
 				C1203B485F5205A10E612877EAE35F3D /* RxSwift.framework in Frameworks */,
 			);
@@ -904,7 +904,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87B32F03152DE49DB485D5C619801FE9 /* Foundation.framework in Frameworks */,
+				D9116E176983DC48043924D0063D642B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -912,7 +912,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				78B6E21A52B28C9BB6CC748847EC8C3C /* Foundation.framework in Frameworks */,
+				025AC0E87D78192604F1CEDFA34277CC /* Foundation.framework in Frameworks */,
 				155B4E393F929CF92EA37F5B54B8BDC3 /* RxCocoa.framework in Frameworks */,
 				6A44D9F03FB209383FF3277CCEE54667 /* RxSwift.framework in Frameworks */,
 			);
@@ -922,7 +922,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E405BEE5687735D0ECCD36B5686F3911 /* Foundation.framework in Frameworks */,
+				76D650488BD58FD146D61B9D1393CAE6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -930,7 +930,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F83790F5BAB299EED1FC9F314E8D011D /* Foundation.framework in Frameworks */,
+				82F2025EAC1DBB202A259053FA352899 /* Foundation.framework in Frameworks */,
 				DCB280754E84B4137A0938D3D5008A8D /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -939,7 +939,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8545FAE762F1B8D44106432F950ABBA /* Foundation.framework in Frameworks */,
+				AB4B17F23796DB20A0A689EDDBC92D77 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -961,7 +961,7 @@
 				1594DE3D138858738216EF06783CF6D2 /* RxCocoa.framework */,
 				BB28C9EC8FF62401414266796CC15F48 /* RxRelay.framework */,
 				1A5BECDE761C833187A0AEB4D402813C /* RxSwift.framework */,
-				A4360E92FE591BE72850D4996BD2CF03 /* iOS */,
+				4182585AF794CBCAE100A4D84EDE35C3 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1204,6 +1204,14 @@
 			path = "../Target Support Files/Differentiator";
 			sourceTree = "<group>";
 		};
+		4182585AF794CBCAE100A4D84EDE35C3 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6A24760488A40715894A66B19A64F6C8 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		5542E1EF42641A6D6F1A8A1030EF0244 /* RxViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -1258,14 +1266,6 @@
 			);
 			name = RxOptional;
 			path = RxOptional;
-			sourceTree = "<group>";
-		};
-		A4360E92FE591BE72850D4996BD2CF03 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				341250A5102D54684E469C9B84593C33 /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		C40777657BD9C7F9E4A1B0042FE22B41 /* Support Files */ = {
@@ -2324,359 +2324,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		11DB2A5008120A2BBED5C686B7E2C05D /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 31F07692772C12DA97C91B78158F4379 /* RxCocoa.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/RxCocoa/RxCocoa-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RxCocoa/RxCocoa-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/RxCocoa/RxCocoa.modulemap";
-				PRODUCT_MODULE_NAME = RxCocoa;
-				PRODUCT_NAME = RxCocoa;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		1422B121EAEAEA11307496903FA623C6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_RELEASE=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		18CAF2DF37FEBC00C6B1646A47547609 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F67C1F77F01DE7C7DE6F19028E58CDBC /* RxRelay.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/RxRelay/RxRelay-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RxRelay/RxRelay-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/RxRelay/RxRelay.modulemap";
-				PRODUCT_MODULE_NAME = RxRelay;
-				PRODUCT_NAME = RxRelay;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		1D242BE63633C180561CD08EDA2621D1 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 422751C3A6A8096D912E0EFA42FC3C8F /* RxOptional.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/RxOptional/RxOptional-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RxOptional/RxOptional-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/RxOptional/RxOptional.modulemap";
-				PRODUCT_MODULE_NAME = RxOptional;
-				PRODUCT_NAME = RxOptional;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		22BFAB8156D493D8E7A9B15541992069 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B3BF912B36B66D815E5EAFF5E7266831 /* RxViewController.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/RxViewController/RxViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RxViewController/RxViewController-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/RxViewController/RxViewController.modulemap";
-				PRODUCT_MODULE_NAME = RxViewController;
-				PRODUCT_NAME = RxViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		27500F6C4A82D758D7B0777C2D5962B9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9AAA17D347FBB1F69D3A356F6141C158 /* RxViewController.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/RxViewController/RxViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RxViewController/RxViewController-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/RxViewController/RxViewController.modulemap";
-				PRODUCT_MODULE_NAME = RxViewController;
-				PRODUCT_NAME = RxViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		458BADD04CD0C1758178C8EFA0BCEBB5 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4FBB75FDBDAA35DD58F2B082167FD255 /* Pods-iOSSwift.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-iOSSwift/Pods-iOSSwift-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-iOSSwift/Pods-iOSSwift.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		4884A8BDD99338854D2CCBD83DA905FA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E09797D3E5724009CC8C6E6C8DD37738 /* Differentiator.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Differentiator/Differentiator-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Differentiator/Differentiator-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/Differentiator/Differentiator.modulemap";
-				PRODUCT_MODULE_NAME = Differentiator;
-				PRODUCT_NAME = Differentiator;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6C20657AFFE472A1E4583B9357E2A976 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8DA0FAEA4D5EC8162E3FA74DB378F0CC /* RxSwift.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/RxSwift/RxSwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RxSwift/RxSwift-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/RxSwift/RxSwift.modulemap";
-				PRODUCT_MODULE_NAME = RxSwift;
-				PRODUCT_NAME = RxSwift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		6F1ABA430A804BB8CFB99994D8F15984 /* Debug */ = {
+		0B992B025277BE904AF47F8617E8B3B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1921C02A8B0FBF60245FC0E626988740 /* RxDataSources.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -2707,11 +2358,44 @@
 			};
 			name = Debug;
 		};
-		7148EC75CA4BBC199F6DD9197F51D289 /* Release */ = {
+		12D31EC39ED44354106FACB52C625B09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7EBFF68BBF0189705E5E9B08BE98E8ED /* RxOptional.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RxOptional/RxOptional-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RxOptional/RxOptional-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RxOptional/RxOptional.modulemap";
+				PRODUCT_MODULE_NAME = RxOptional;
+				PRODUCT_NAME = RxOptional;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		23B3BE89561DD57D147F542D8FBE0DE2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4A85C6ACEDC4CA98D84D7093B9AA0BA7 /* RxRelay.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -2743,11 +2427,114 @@
 			};
 			name = Release;
 		};
-		835DEC5C6961D1F186D9D8C1FDA662F0 /* Release */ = {
+		315A0654AD4BAAF6DDDAFDF2583632C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31F07692772C12DA97C91B78158F4379 /* RxCocoa.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RxCocoa/RxCocoa-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RxCocoa/RxCocoa-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RxCocoa/RxCocoa.modulemap";
+				PRODUCT_MODULE_NAME = RxCocoa;
+				PRODUCT_NAME = RxCocoa;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		451F71FA6CE4A963F55FCD01D3CF066B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 422751C3A6A8096D912E0EFA42FC3C8F /* RxOptional.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RxOptional/RxOptional-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RxOptional/RxOptional-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RxOptional/RxOptional.modulemap";
+				PRODUCT_MODULE_NAME = RxOptional;
+				PRODUCT_NAME = RxOptional;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		57985F2657FE33BDCAAE1FE63DB2AC9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F67C1F77F01DE7C7DE6F19028E58CDBC /* RxRelay.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RxRelay/RxRelay-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RxRelay/RxRelay-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RxRelay/RxRelay.modulemap";
+				PRODUCT_MODULE_NAME = RxRelay;
+				PRODUCT_NAME = RxRelay;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		58E7354137C0F1824AFF29656EF99B2F /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 2E7A27124BB743DB50AAC4BDCA1139D1 /* RxDataSources.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -2779,11 +2566,10 @@
 			};
 			name = Release;
 		};
-		A043D1B03A1D2AD796676427AB98F06B /* Release */ = {
+		6D0B4F5239B2C1D014C6A4EAFBD75249 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32A29739B6DD3F3D1321BE187FA181C3 /* Differentiator.release.xcconfig */;
+			baseConfigurationReference = E09797D3E5724009CC8C6E6C8DD37738 /* Differentiator.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -2809,159 +2595,16 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A4BF7838D79DDAB02AAE11D435C032FE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 37854D2FCFC78C9B39441411AF14E380 /* Pods-iOSSwift.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-iOSSwift/Pods-iOSSwift-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-iOSSwift/Pods-iOSSwift.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		B4F7BAB268026CDDB68A8ABF1DAE12C0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7EBFF68BBF0189705E5E9B08BE98E8ED /* RxOptional.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/RxOptional/RxOptional-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RxOptional/RxOptional-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/RxOptional/RxOptional.modulemap";
-				PRODUCT_MODULE_NAME = RxOptional;
-				PRODUCT_NAME = RxOptional;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D409D51B6B0D266ECB5BA957E1EF5514 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F65CF092A89875A4C68391A73BF69AD8 /* RxSwift.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/RxSwift/RxSwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RxSwift/RxSwift-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/RxSwift/RxSwift.modulemap";
-				PRODUCT_MODULE_NAME = RxSwift;
-				PRODUCT_NAME = RxSwift;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		EC4C580659E08318BD7F02F5159C2BC2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 19DE5B8B1817667C706967F3D2D9983E /* RxCocoa.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/RxCocoa/RxCocoa-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RxCocoa/RxCocoa-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/RxCocoa/RxCocoa.modulemap";
-				PRODUCT_MODULE_NAME = RxCocoa;
-				PRODUCT_NAME = RxCocoa;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		ED7888FA6713EABBF66D26A8003AD1CA /* Debug */ = {
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -2984,6 +2627,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -3022,14 +2666,358 @@
 			};
 			name = Debug;
 		};
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		A12CB28DDA98D88CE50F13689437DB70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FBB75FDBDAA35DD58F2B082167FD255 /* Pods-iOSSwift.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iOSSwift/Pods-iOSSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iOSSwift/Pods-iOSSwift.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A8F60BFB8975CD1C196DDC1E3F818789 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F65CF092A89875A4C68391A73BF69AD8 /* RxSwift.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RxSwift/RxSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RxSwift/RxSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RxSwift/RxSwift.modulemap";
+				PRODUCT_MODULE_NAME = RxSwift;
+				PRODUCT_NAME = RxSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AB020EB8C7DFFA3C1F89186CA4A9A06C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AAA17D347FBB1F69D3A356F6141C158 /* RxViewController.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RxViewController/RxViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RxViewController/RxViewController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RxViewController/RxViewController.modulemap";
+				PRODUCT_MODULE_NAME = RxViewController;
+				PRODUCT_NAME = RxViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ADE9D483D61DD8E63E8DD3489167E293 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37854D2FCFC78C9B39441411AF14E380 /* Pods-iOSSwift.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-iOSSwift/Pods-iOSSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iOSSwift/Pods-iOSSwift.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C86B6EB3287B7A3D6DB0BB4130150D8C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DA0FAEA4D5EC8162E3FA74DB378F0CC /* RxSwift.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RxSwift/RxSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RxSwift/RxSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RxSwift/RxSwift.modulemap";
+				PRODUCT_MODULE_NAME = RxSwift;
+				PRODUCT_NAME = RxSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E64FC1094F0EDEBDFF8C8C1AD854522D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3BF912B36B66D815E5EAFF5E7266831 /* RxViewController.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RxViewController/RxViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RxViewController/RxViewController-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RxViewController/RxViewController.modulemap";
+				PRODUCT_MODULE_NAME = RxViewController;
+				PRODUCT_NAME = RxViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F98C68FAEC4D945E8E7B9243D9A5D312 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 32A29739B6DD3F3D1321BE187FA181C3 /* Differentiator.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Differentiator/Differentiator-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Differentiator/Differentiator-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Differentiator/Differentiator.modulemap";
+				PRODUCT_MODULE_NAME = Differentiator;
+				PRODUCT_NAME = Differentiator;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FD1ACB73CF57D061218FD6389B04BEB1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19DE5B8B1817667C706967F3D2D9983E /* RxCocoa.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RxCocoa/RxCocoa-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RxCocoa/RxCocoa-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/RxCocoa/RxCocoa.modulemap";
+				PRODUCT_MODULE_NAME = RxCocoa;
+				PRODUCT_NAME = RxCocoa;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		03A244BE9DA27F0E875F6F1CF16FBDBC /* Build configuration list for PBXNativeTarget "Differentiator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4884A8BDD99338854D2CCBD83DA905FA /* Debug */,
-				A043D1B03A1D2AD796676427AB98F06B /* Release */,
+				6D0B4F5239B2C1D014C6A4EAFBD75249 /* Debug */,
+				F98C68FAEC4D945E8E7B9243D9A5D312 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3037,8 +3025,8 @@
 		44157C11B84A633CD5E0F01887C666A3 /* Build configuration list for PBXNativeTarget "Pods-iOSSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A4BF7838D79DDAB02AAE11D435C032FE /* Debug */,
-				458BADD04CD0C1758178C8EFA0BCEBB5 /* Release */,
+				ADE9D483D61DD8E63E8DD3489167E293 /* Debug */,
+				A12CB28DDA98D88CE50F13689437DB70 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3046,8 +3034,8 @@
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ED7888FA6713EABBF66D26A8003AD1CA /* Debug */,
-				1422B121EAEAEA11307496903FA623C6 /* Release */,
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3055,8 +3043,8 @@
 		5194CD3E95E5A8488849A1C332C5C27A /* Build configuration list for PBXNativeTarget "RxDataSources" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6F1ABA430A804BB8CFB99994D8F15984 /* Debug */,
-				835DEC5C6961D1F186D9D8C1FDA662F0 /* Release */,
+				0B992B025277BE904AF47F8617E8B3B4 /* Debug */,
+				58E7354137C0F1824AFF29656EF99B2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3064,8 +3052,8 @@
 		8052E4D8D8DBAAD095DFBC71112F357B /* Build configuration list for PBXNativeTarget "RxRelay" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				18CAF2DF37FEBC00C6B1646A47547609 /* Debug */,
-				7148EC75CA4BBC199F6DD9197F51D289 /* Release */,
+				57985F2657FE33BDCAAE1FE63DB2AC9E /* Debug */,
+				23B3BE89561DD57D147F542D8FBE0DE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3073,8 +3061,8 @@
 		80A96083D9AA945399E8A00893D8D3AE /* Build configuration list for PBXNativeTarget "RxOptional" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B4F7BAB268026CDDB68A8ABF1DAE12C0 /* Debug */,
-				1D242BE63633C180561CD08EDA2621D1 /* Release */,
+				12D31EC39ED44354106FACB52C625B09 /* Debug */,
+				451F71FA6CE4A963F55FCD01D3CF066B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3082,8 +3070,8 @@
 		881ABA967B1B3A39AC7020FD82359F9B /* Build configuration list for PBXNativeTarget "RxSwift" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D409D51B6B0D266ECB5BA957E1EF5514 /* Debug */,
-				6C20657AFFE472A1E4583B9357E2A976 /* Release */,
+				A8F60BFB8975CD1C196DDC1E3F818789 /* Debug */,
+				C86B6EB3287B7A3D6DB0BB4130150D8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3091,8 +3079,8 @@
 		982939AD3A77F977C66072A169A483B4 /* Build configuration list for PBXNativeTarget "RxViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				27500F6C4A82D758D7B0777C2D5962B9 /* Debug */,
-				22BFAB8156D493D8E7A9B15541992069 /* Release */,
+				AB020EB8C7DFFA3C1F89186CA4A9A06C /* Debug */,
+				E64FC1094F0EDEBDFF8C8C1AD854522D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -3100,8 +3088,8 @@
 		F7028E084333DB57BEE3106A0E5C0DFB /* Build configuration list for PBXNativeTarget "RxCocoa" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EC4C580659E08318BD7F02F5159C2BC2 /* Debug */,
-				11DB2A5008120A2BBED5C686B7E2C05D /* Release */,
+				FD1ACB73CF57D061218FD6389B04BEB1 /* Debug */,
+				315A0654AD4BAAF6DDDAFDF2583632C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

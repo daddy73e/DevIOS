@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B6713D92580C18900DA661A /* ProtocolViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B6713D82580C18900DA661A /* ProtocolViewController.swift */; };
 		C735B39524DB89CD00334224 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735B39424DB89CD00334224 /* AppDelegate.swift */; };
 		C735B39724DB89CD00334224 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735B39624DB89CD00334224 /* SceneDelegate.swift */; };
 		C735B39924DB89CD00334224 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C735B39824DB89CD00334224 /* ViewController.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4B6713D82580C18900DA661A /* ProtocolViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolViewController.swift; sourceTree = "<group>"; };
 		6EAD79D9A78D8E350AF512C9 /* Pods-iOSSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSSwift.release.xcconfig"; path = "Target Support Files/Pods-iOSSwift/Pods-iOSSwift.release.xcconfig"; sourceTree = "<group>"; };
 		784D6840F5361889BB1F8F9A /* Pods-iOSSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSSwift.debug.xcconfig"; path = "Target Support Files/Pods-iOSSwift/Pods-iOSSwift.debug.xcconfig"; sourceTree = "<group>"; };
 		C735B39124DB89CD00334224 /* iOSSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +99,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4B6713D52580BDE900DA661A /* protocol */ = {
+			isa = PBXGroup;
+			children = (
+				4B6713D82580C18900DA661A /* ProtocolViewController.swift */,
+			);
+			path = protocol;
+			sourceTree = "<group>";
+		};
 		B61FB3B0B568C05544F28326 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +137,7 @@
 		C735B39324DB89CD00334224 /* iOSSwift */ = {
 			isa = PBXGroup;
 			children = (
+				4B6713D52580BDE900DA661A /* protocol */,
 				C7F6E5C62550DFEE007F8C42 /* network */,
 				C79642482542B09400722B62 /* utils */,
 				C77F392924EB5DF700E41A54 /* mvvm */,
@@ -418,6 +429,7 @@
 				C796424F2542B1DE00722B62 /* BaseViewController.swift in Sources */,
 				C79642C92546592000722B62 /* TitleSwitchTableViewCell.swift in Sources */,
 				C752709125529C4000C4FF11 /* SavedItem.swift in Sources */,
+				4B6713D92580C18900DA661A /* ProtocolViewController.swift in Sources */,
 				C7F6E5C82550E014007F8C42 /* ApiService.swift in Sources */,
 				C73F7DC12547A33500E19AF0 /* MultipleRowModel.swift in Sources */,
 				C752708B255293BD00C4FF11 /* Settings.swift in Sources */,
